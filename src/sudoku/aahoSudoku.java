@@ -5,6 +5,8 @@
  */
 package sudoku;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author samsung
@@ -30,87 +32,87 @@ public class aahoSudoku extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
-        j1 = new javax.swing.JTextField();
-        j2 = new javax.swing.JTextField();
-        j3 = new javax.swing.JTextField();
-        j4 = new javax.swing.JTextField();
-        j5 = new javax.swing.JTextField();
-        j6 = new javax.swing.JTextField();
-        j7 = new javax.swing.JTextField();
-        j8 = new javax.swing.JTextField();
-        j9 = new javax.swing.JTextField();
-        j10 = new javax.swing.JTextField();
-        j11 = new javax.swing.JTextField();
-        j12 = new javax.swing.JTextField();
-        j13 = new javax.swing.JTextField();
-        j14 = new javax.swing.JTextField();
-        j15 = new javax.swing.JTextField();
-        j16 = new javax.swing.JTextField();
-        j17 = new javax.swing.JTextField();
-        j18 = new javax.swing.JTextField();
-        j19 = new javax.swing.JTextField();
-        j20 = new javax.swing.JTextField();
-        j21 = new javax.swing.JTextField();
-        j22 = new javax.swing.JTextField();
-        j23 = new javax.swing.JTextField();
-        j24 = new javax.swing.JTextField();
-        j25 = new javax.swing.JTextField();
-        j26 = new javax.swing.JTextField();
-        j27 = new javax.swing.JTextField();
-        j28 = new javax.swing.JTextField();
-        j29 = new javax.swing.JTextField();
-        j30 = new javax.swing.JTextField();
-        j31 = new javax.swing.JTextField();
-        j32 = new javax.swing.JTextField();
-        j33 = new javax.swing.JTextField();
-        j34 = new javax.swing.JTextField();
-        j35 = new javax.swing.JTextField();
-        j36 = new javax.swing.JTextField();
-        j37 = new javax.swing.JTextField();
-        j38 = new javax.swing.JTextField();
-        j39 = new javax.swing.JTextField();
-        j40 = new javax.swing.JTextField();
-        j41 = new javax.swing.JTextField();
-        j42 = new javax.swing.JTextField();
-        j43 = new javax.swing.JTextField();
-        j44 = new javax.swing.JTextField();
-        j45 = new javax.swing.JTextField();
-        j46 = new javax.swing.JTextField();
-        j47 = new javax.swing.JTextField();
-        j48 = new javax.swing.JTextField();
-        j49 = new javax.swing.JTextField();
-        j50 = new javax.swing.JTextField();
-        j51 = new javax.swing.JTextField();
-        j52 = new javax.swing.JTextField();
-        j53 = new javax.swing.JTextField();
-        j54 = new javax.swing.JTextField();
-        j55 = new javax.swing.JTextField();
-        j56 = new javax.swing.JTextField();
-        j57 = new javax.swing.JTextField();
-        j58 = new javax.swing.JTextField();
-        j59 = new javax.swing.JTextField();
-        j60 = new javax.swing.JTextField();
-        j61 = new javax.swing.JTextField();
-        j62 = new javax.swing.JTextField();
-        j63 = new javax.swing.JTextField();
-        j64 = new javax.swing.JTextField();
-        j65 = new javax.swing.JTextField();
-        j66 = new javax.swing.JTextField();
-        j67 = new javax.swing.JTextField();
-        j68 = new javax.swing.JTextField();
-        j69 = new javax.swing.JTextField();
-        j70 = new javax.swing.JTextField();
-        j71 = new javax.swing.JTextField();
-        j72 = new javax.swing.JTextField();
-        j73 = new javax.swing.JTextField();
-        j74 = new javax.swing.JTextField();
-        j75 = new javax.swing.JTextField();
-        j76 = new javax.swing.JTextField();
-        j77 = new javax.swing.JTextField();
-        j78 = new javax.swing.JTextField();
-        j79 = new javax.swing.JTextField();
-        j80 = new javax.swing.JTextField();
-        j81 = new javax.swing.JTextField();
+        c1 = new javax.swing.JComboBox();
+        c2 = new javax.swing.JComboBox();
+        c3 = new javax.swing.JComboBox();
+        c4 = new javax.swing.JComboBox();
+        c5 = new javax.swing.JComboBox();
+        c6 = new javax.swing.JComboBox();
+        c7 = new javax.swing.JComboBox();
+        c8 = new javax.swing.JComboBox();
+        c9 = new javax.swing.JComboBox();
+        c10 = new javax.swing.JComboBox();
+        c11 = new javax.swing.JComboBox();
+        c12 = new javax.swing.JComboBox();
+        c13 = new javax.swing.JComboBox();
+        c14 = new javax.swing.JComboBox();
+        c15 = new javax.swing.JComboBox();
+        c16 = new javax.swing.JComboBox();
+        c17 = new javax.swing.JComboBox();
+        c18 = new javax.swing.JComboBox();
+        c19 = new javax.swing.JComboBox();
+        c20 = new javax.swing.JComboBox();
+        c21 = new javax.swing.JComboBox();
+        c22 = new javax.swing.JComboBox();
+        c23 = new javax.swing.JComboBox();
+        c24 = new javax.swing.JComboBox();
+        c25 = new javax.swing.JComboBox();
+        c26 = new javax.swing.JComboBox();
+        c27 = new javax.swing.JComboBox();
+        c28 = new javax.swing.JComboBox();
+        c29 = new javax.swing.JComboBox();
+        c30 = new javax.swing.JComboBox();
+        c31 = new javax.swing.JComboBox();
+        c32 = new javax.swing.JComboBox();
+        c33 = new javax.swing.JComboBox();
+        c34 = new javax.swing.JComboBox();
+        c35 = new javax.swing.JComboBox();
+        c36 = new javax.swing.JComboBox();
+        c37 = new javax.swing.JComboBox();
+        c38 = new javax.swing.JComboBox();
+        c39 = new javax.swing.JComboBox();
+        c40 = new javax.swing.JComboBox();
+        c41 = new javax.swing.JComboBox();
+        c42 = new javax.swing.JComboBox();
+        c43 = new javax.swing.JComboBox();
+        c44 = new javax.swing.JComboBox();
+        c45 = new javax.swing.JComboBox();
+        c46 = new javax.swing.JComboBox();
+        c47 = new javax.swing.JComboBox();
+        c48 = new javax.swing.JComboBox();
+        c49 = new javax.swing.JComboBox();
+        c50 = new javax.swing.JComboBox();
+        c51 = new javax.swing.JComboBox();
+        c52 = new javax.swing.JComboBox();
+        c53 = new javax.swing.JComboBox();
+        c54 = new javax.swing.JComboBox();
+        c55 = new javax.swing.JComboBox();
+        c56 = new javax.swing.JComboBox();
+        c57 = new javax.swing.JComboBox();
+        c58 = new javax.swing.JComboBox();
+        c59 = new javax.swing.JComboBox();
+        c60 = new javax.swing.JComboBox();
+        c61 = new javax.swing.JComboBox();
+        c62 = new javax.swing.JComboBox();
+        c63 = new javax.swing.JComboBox();
+        c64 = new javax.swing.JComboBox();
+        c65 = new javax.swing.JComboBox();
+        c66 = new javax.swing.JComboBox();
+        c67 = new javax.swing.JComboBox();
+        c68 = new javax.swing.JComboBox();
+        c69 = new javax.swing.JComboBox();
+        c70 = new javax.swing.JComboBox();
+        c71 = new javax.swing.JComboBox();
+        c72 = new javax.swing.JComboBox();
+        c73 = new javax.swing.JComboBox();
+        c74 = new javax.swing.JComboBox();
+        c75 = new javax.swing.JComboBox();
+        c76 = new javax.swing.JComboBox();
+        c77 = new javax.swing.JComboBox();
+        c78 = new javax.swing.JComboBox();
+        c79 = new javax.swing.JComboBox();
+        c80 = new javax.swing.JComboBox();
+        c81 = new javax.swing.JComboBox();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -126,651 +128,651 @@ public class aahoSudoku extends javax.swing.JFrame {
             }
         });
 
-        j1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        j1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        j1.addActionListener(new java.awt.event.ActionListener() {
+        c1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        c1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                j1ActionPerformed(evt);
+                c1ActionPerformed(evt);
             }
         });
 
-        j2.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        j2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        j2.addActionListener(new java.awt.event.ActionListener() {
+        c2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        c2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                j2ActionPerformed(evt);
+                c2ActionPerformed(evt);
             }
         });
 
-        j3.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        j3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        j3.addActionListener(new java.awt.event.ActionListener() {
+        c3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        c3.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                j3ActionPerformed(evt);
+                c3ActionPerformed(evt);
             }
         });
 
-        j4.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        j4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        j4.addActionListener(new java.awt.event.ActionListener() {
+        c4.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        c4.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                j4ActionPerformed(evt);
+                c4ActionPerformed(evt);
             }
         });
 
-        j5.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        j5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        j5.addActionListener(new java.awt.event.ActionListener() {
+        c5.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        c5.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                j5ActionPerformed(evt);
+                c5ActionPerformed(evt);
             }
         });
 
-        j6.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        j6.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        j6.addActionListener(new java.awt.event.ActionListener() {
+        c6.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        c6.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                j6ActionPerformed(evt);
+                c6ActionPerformed(evt);
             }
         });
 
-        j7.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        j7.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        j7.addActionListener(new java.awt.event.ActionListener() {
+        c7.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        c7.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                j7ActionPerformed(evt);
+                c7ActionPerformed(evt);
             }
         });
 
-        j8.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        j8.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        j8.addActionListener(new java.awt.event.ActionListener() {
+        c8.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        c8.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                j8ActionPerformed(evt);
+                c8ActionPerformed(evt);
             }
         });
 
-        j9.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        j9.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        j9.addActionListener(new java.awt.event.ActionListener() {
+        c9.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        c9.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                j9ActionPerformed(evt);
+                c9ActionPerformed(evt);
             }
         });
 
-        j10.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        j10.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        j10.addActionListener(new java.awt.event.ActionListener() {
+        c10.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        c10.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                j10ActionPerformed(evt);
+                c10ActionPerformed(evt);
             }
         });
 
-        j11.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        j11.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        j11.addActionListener(new java.awt.event.ActionListener() {
+        c11.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        c11.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c11.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                j11ActionPerformed(evt);
+                c11ActionPerformed(evt);
             }
         });
 
-        j12.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        j12.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        j12.addActionListener(new java.awt.event.ActionListener() {
+        c12.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        c12.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c12.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                j12ActionPerformed(evt);
+                c12ActionPerformed(evt);
             }
         });
 
-        j13.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        j13.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        j13.addActionListener(new java.awt.event.ActionListener() {
+        c13.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        c13.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c13.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                j13ActionPerformed(evt);
+                c13ActionPerformed(evt);
             }
         });
 
-        j14.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        j14.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        j14.addActionListener(new java.awt.event.ActionListener() {
+        c14.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        c14.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c14.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                j14ActionPerformed(evt);
+                c14ActionPerformed(evt);
             }
         });
 
-        j15.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        j15.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        j15.addActionListener(new java.awt.event.ActionListener() {
+        c15.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        c15.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c15.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                j15ActionPerformed(evt);
+                c15ActionPerformed(evt);
             }
         });
 
-        j16.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        j16.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        j16.addActionListener(new java.awt.event.ActionListener() {
+        c16.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        c16.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c16.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                j16ActionPerformed(evt);
+                c16ActionPerformed(evt);
             }
         });
 
-        j17.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        j17.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        j17.addActionListener(new java.awt.event.ActionListener() {
+        c17.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        c17.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c17.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                j17ActionPerformed(evt);
+                c17ActionPerformed(evt);
             }
         });
 
-        j18.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        j18.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        j18.addActionListener(new java.awt.event.ActionListener() {
+        c18.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        c18.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c18.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                j18ActionPerformed(evt);
+                c18ActionPerformed(evt);
             }
         });
 
-        j19.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        j19.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        j19.addActionListener(new java.awt.event.ActionListener() {
+        c19.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        c19.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c19.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                j19ActionPerformed(evt);
+                c19ActionPerformed(evt);
             }
         });
 
-        j20.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        j20.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        j20.addActionListener(new java.awt.event.ActionListener() {
+        c20.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        c20.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c20.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                j20ActionPerformed(evt);
+                c20ActionPerformed(evt);
             }
         });
 
-        j21.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        j21.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        j21.addActionListener(new java.awt.event.ActionListener() {
+        c21.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        c21.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c21.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                j21ActionPerformed(evt);
+                c21ActionPerformed(evt);
             }
         });
 
-        j22.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        j22.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        j22.addActionListener(new java.awt.event.ActionListener() {
+        c22.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        c22.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c22.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                j22ActionPerformed(evt);
+                c22ActionPerformed(evt);
             }
         });
 
-        j23.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        j23.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        j23.addActionListener(new java.awt.event.ActionListener() {
+        c23.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        c23.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c23.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                j23ActionPerformed(evt);
+                c23ActionPerformed(evt);
             }
         });
 
-        j24.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        j24.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        j24.addActionListener(new java.awt.event.ActionListener() {
+        c24.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        c24.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c24.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                j24ActionPerformed(evt);
+                c24ActionPerformed(evt);
             }
         });
 
-        j25.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        j25.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        j25.addActionListener(new java.awt.event.ActionListener() {
+        c25.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        c25.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c25.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                j25ActionPerformed(evt);
+                c25ActionPerformed(evt);
             }
         });
 
-        j26.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        j26.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        j26.addActionListener(new java.awt.event.ActionListener() {
+        c26.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        c26.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c26.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                j26ActionPerformed(evt);
+                c26ActionPerformed(evt);
             }
         });
 
-        j27.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        j27.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        j27.addActionListener(new java.awt.event.ActionListener() {
+        c27.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        c27.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c27.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                j27ActionPerformed(evt);
+                c27ActionPerformed(evt);
             }
         });
 
-        j28.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        j28.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        j28.addActionListener(new java.awt.event.ActionListener() {
+        c28.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        c28.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c28.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                j28ActionPerformed(evt);
+                c28ActionPerformed(evt);
             }
         });
 
-        j29.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        j29.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        j29.addActionListener(new java.awt.event.ActionListener() {
+        c29.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        c29.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c29.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                j29ActionPerformed(evt);
+                c29ActionPerformed(evt);
             }
         });
 
-        j30.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        j30.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        j30.addActionListener(new java.awt.event.ActionListener() {
+        c30.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        c30.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c30.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                j30ActionPerformed(evt);
+                c30ActionPerformed(evt);
             }
         });
 
-        j31.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        j31.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        j31.addActionListener(new java.awt.event.ActionListener() {
+        c31.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        c31.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c31.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                j31ActionPerformed(evt);
+                c31ActionPerformed(evt);
             }
         });
 
-        j32.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        j32.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        j32.addActionListener(new java.awt.event.ActionListener() {
+        c32.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        c32.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c32.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                j32ActionPerformed(evt);
+                c32ActionPerformed(evt);
             }
         });
 
-        j33.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        j33.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        j33.addActionListener(new java.awt.event.ActionListener() {
+        c33.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        c33.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c33.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                j33ActionPerformed(evt);
+                c33ActionPerformed(evt);
             }
         });
 
-        j34.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        j34.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        j34.addActionListener(new java.awt.event.ActionListener() {
+        c34.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        c34.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c34.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                j34ActionPerformed(evt);
+                c34ActionPerformed(evt);
             }
         });
 
-        j35.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        j35.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        j35.addActionListener(new java.awt.event.ActionListener() {
+        c35.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        c35.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c35.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                j35ActionPerformed(evt);
+                c35ActionPerformed(evt);
             }
         });
 
-        j36.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        j36.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        j36.addActionListener(new java.awt.event.ActionListener() {
+        c36.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        c36.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c36.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                j36ActionPerformed(evt);
+                c36ActionPerformed(evt);
             }
         });
 
-        j37.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        j37.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        j37.addActionListener(new java.awt.event.ActionListener() {
+        c37.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        c37.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c37.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                j37ActionPerformed(evt);
+                c37ActionPerformed(evt);
             }
         });
 
-        j38.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        j38.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        j38.addActionListener(new java.awt.event.ActionListener() {
+        c38.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        c38.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c38.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                j38ActionPerformed(evt);
+                c38ActionPerformed(evt);
             }
         });
 
-        j39.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        j39.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        j39.addActionListener(new java.awt.event.ActionListener() {
+        c39.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        c39.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c39.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                j39ActionPerformed(evt);
+                c39ActionPerformed(evt);
             }
         });
 
-        j40.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        j40.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        j40.addActionListener(new java.awt.event.ActionListener() {
+        c40.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        c40.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c40.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                j40ActionPerformed(evt);
+                c40ActionPerformed(evt);
             }
         });
 
-        j41.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        j41.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        j41.addActionListener(new java.awt.event.ActionListener() {
+        c41.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        c41.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c41.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                j41ActionPerformed(evt);
+                c41ActionPerformed(evt);
             }
         });
 
-        j42.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        j42.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        j42.addActionListener(new java.awt.event.ActionListener() {
+        c42.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        c42.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c42.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                j42ActionPerformed(evt);
+                c42ActionPerformed(evt);
             }
         });
 
-        j43.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        j43.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        j43.addActionListener(new java.awt.event.ActionListener() {
+        c43.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        c43.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c43.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                j43ActionPerformed(evt);
+                c43ActionPerformed(evt);
             }
         });
 
-        j44.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        j44.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        j44.addActionListener(new java.awt.event.ActionListener() {
+        c44.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        c44.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c44.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                j44ActionPerformed(evt);
+                c44ActionPerformed(evt);
             }
         });
 
-        j45.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        j45.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        j45.addActionListener(new java.awt.event.ActionListener() {
+        c45.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        c45.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c45.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                j45ActionPerformed(evt);
+                c45ActionPerformed(evt);
             }
         });
 
-        j46.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        j46.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        j46.addActionListener(new java.awt.event.ActionListener() {
+        c46.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        c46.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c46.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                j46ActionPerformed(evt);
+                c46ActionPerformed(evt);
             }
         });
 
-        j47.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        j47.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        j47.addActionListener(new java.awt.event.ActionListener() {
+        c47.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        c47.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c47.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                j47ActionPerformed(evt);
+                c47ActionPerformed(evt);
             }
         });
 
-        j48.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        j48.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        j48.addActionListener(new java.awt.event.ActionListener() {
+        c48.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        c48.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c48.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                j48ActionPerformed(evt);
+                c48ActionPerformed(evt);
             }
         });
 
-        j49.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        j49.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        j49.addActionListener(new java.awt.event.ActionListener() {
+        c49.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        c49.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c49.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                j49ActionPerformed(evt);
+                c49ActionPerformed(evt);
             }
         });
 
-        j50.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        j50.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        j50.addActionListener(new java.awt.event.ActionListener() {
+        c50.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        c50.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c50.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                j50ActionPerformed(evt);
+                c50ActionPerformed(evt);
             }
         });
 
-        j51.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        j51.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        j51.addActionListener(new java.awt.event.ActionListener() {
+        c51.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        c51.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c51.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                j51ActionPerformed(evt);
+                c51ActionPerformed(evt);
             }
         });
 
-        j52.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        j52.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        j52.addActionListener(new java.awt.event.ActionListener() {
+        c52.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        c52.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c52.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                j52ActionPerformed(evt);
+                c52ActionPerformed(evt);
             }
         });
 
-        j53.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        j53.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        j53.addActionListener(new java.awt.event.ActionListener() {
+        c53.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        c53.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c53.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                j53ActionPerformed(evt);
+                c53ActionPerformed(evt);
             }
         });
 
-        j54.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        j54.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        j54.addActionListener(new java.awt.event.ActionListener() {
+        c54.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        c54.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c54.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                j54ActionPerformed(evt);
+                c54ActionPerformed(evt);
             }
         });
 
-        j55.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        j55.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        j55.addActionListener(new java.awt.event.ActionListener() {
+        c55.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        c55.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c55.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                j55ActionPerformed(evt);
+                c55ActionPerformed(evt);
             }
         });
 
-        j56.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        j56.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        j56.addActionListener(new java.awt.event.ActionListener() {
+        c56.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        c56.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c56.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                j56ActionPerformed(evt);
+                c56ActionPerformed(evt);
             }
         });
 
-        j57.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        j57.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        j57.addActionListener(new java.awt.event.ActionListener() {
+        c57.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        c57.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c57.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                j57ActionPerformed(evt);
+                c57ActionPerformed(evt);
             }
         });
 
-        j58.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        j58.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        j58.addActionListener(new java.awt.event.ActionListener() {
+        c58.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        c58.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c58.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                j58ActionPerformed(evt);
+                c58ActionPerformed(evt);
             }
         });
 
-        j59.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        j59.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        j59.addActionListener(new java.awt.event.ActionListener() {
+        c59.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        c59.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c59.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                j59ActionPerformed(evt);
+                c59ActionPerformed(evt);
             }
         });
 
-        j60.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        j60.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        j60.addActionListener(new java.awt.event.ActionListener() {
+        c60.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        c60.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c60.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                j60ActionPerformed(evt);
+                c60ActionPerformed(evt);
             }
         });
 
-        j61.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        j61.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        j61.addActionListener(new java.awt.event.ActionListener() {
+        c61.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        c61.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c61.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                j61ActionPerformed(evt);
+                c61ActionPerformed(evt);
             }
         });
 
-        j62.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        j62.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        j62.addActionListener(new java.awt.event.ActionListener() {
+        c62.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        c62.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c62.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                j62ActionPerformed(evt);
+                c62ActionPerformed(evt);
             }
         });
 
-        j63.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        j63.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        j63.addActionListener(new java.awt.event.ActionListener() {
+        c63.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        c63.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c63.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                j63ActionPerformed(evt);
+                c63ActionPerformed(evt);
             }
         });
 
-        j64.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        j64.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        j64.addActionListener(new java.awt.event.ActionListener() {
+        c64.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        c64.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c64.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                j64ActionPerformed(evt);
+                c64ActionPerformed(evt);
             }
         });
 
-        j65.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        j65.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        j65.addActionListener(new java.awt.event.ActionListener() {
+        c65.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        c65.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c65.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                j65ActionPerformed(evt);
+                c65ActionPerformed(evt);
             }
         });
 
-        j66.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        j66.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        j66.addActionListener(new java.awt.event.ActionListener() {
+        c66.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        c66.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c66.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                j66ActionPerformed(evt);
+                c66ActionPerformed(evt);
             }
         });
 
-        j67.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        j67.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        j67.addActionListener(new java.awt.event.ActionListener() {
+        c67.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        c67.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c67.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                j67ActionPerformed(evt);
+                c67ActionPerformed(evt);
             }
         });
 
-        j68.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        j68.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        j68.addActionListener(new java.awt.event.ActionListener() {
+        c68.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        c68.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c68.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                j68ActionPerformed(evt);
+                c68ActionPerformed(evt);
             }
         });
 
-        j69.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        j69.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        j69.addActionListener(new java.awt.event.ActionListener() {
+        c69.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        c69.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c69.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                j69ActionPerformed(evt);
+                c69ActionPerformed(evt);
             }
         });
 
-        j70.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        j70.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        j70.addActionListener(new java.awt.event.ActionListener() {
+        c70.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        c70.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c70.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                j70ActionPerformed(evt);
+                c70ActionPerformed(evt);
             }
         });
 
-        j71.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        j71.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        j71.addActionListener(new java.awt.event.ActionListener() {
+        c71.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        c71.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c71.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                j71ActionPerformed(evt);
+                c71ActionPerformed(evt);
             }
         });
 
-        j72.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        j72.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        j72.addActionListener(new java.awt.event.ActionListener() {
+        c72.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        c72.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c72.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                j72ActionPerformed(evt);
+                c72ActionPerformed(evt);
             }
         });
 
-        j73.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        j73.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        j73.addActionListener(new java.awt.event.ActionListener() {
+        c73.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        c73.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c73.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                j73ActionPerformed(evt);
+                c73ActionPerformed(evt);
             }
         });
 
-        j74.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        j74.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        j74.addActionListener(new java.awt.event.ActionListener() {
+        c74.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        c74.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c74.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                j74ActionPerformed(evt);
+                c74ActionPerformed(evt);
             }
         });
 
-        j75.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        j75.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        j75.addActionListener(new java.awt.event.ActionListener() {
+        c75.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        c75.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c75.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                j75ActionPerformed(evt);
+                c75ActionPerformed(evt);
             }
         });
 
-        j76.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        j76.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        j76.addActionListener(new java.awt.event.ActionListener() {
+        c76.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        c76.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c76.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                j76ActionPerformed(evt);
+                c76ActionPerformed(evt);
             }
         });
 
-        j77.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        j77.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        j77.addActionListener(new java.awt.event.ActionListener() {
+        c77.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        c77.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c77.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                j77ActionPerformed(evt);
+                c77ActionPerformed(evt);
             }
         });
 
-        j78.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        j78.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        j78.addActionListener(new java.awt.event.ActionListener() {
+        c78.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        c78.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c78.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                j78ActionPerformed(evt);
+                c78ActionPerformed(evt);
             }
         });
 
-        j79.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        j79.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        j79.addActionListener(new java.awt.event.ActionListener() {
+        c79.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        c79.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c79.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                j79ActionPerformed(evt);
+                c79ActionPerformed(evt);
             }
         });
 
-        j80.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        j80.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        j80.addActionListener(new java.awt.event.ActionListener() {
+        c80.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        c80.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c80.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                j80ActionPerformed(evt);
+                c80ActionPerformed(evt);
             }
         });
 
-        j81.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        j81.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        j81.addActionListener(new java.awt.event.ActionListener() {
+        c81.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        c81.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c81.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                j81ActionPerformed(evt);
+                c81ActionPerformed(evt);
             }
         });
 
@@ -778,183 +780,183 @@ public class aahoSudoku extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(81, 81, 81)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(j46, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(j37, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(j28, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(j19, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(j10, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(j1, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(j2, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(j3, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(j4, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(j5, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(j6, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(j7, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(j8, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(j9, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(j11, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(j12, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(j13, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(j14, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(j15, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(j16, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(j17, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(j18, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(j20, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(j21, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(j22, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(j23, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(j24, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(j25, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(j26, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(j27, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(j29, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(j30, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(j31, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(j32, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(j33, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(j34, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(j35, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(j36, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(j38, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(j39, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(j40, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(j41, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(j42, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(j43, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(j44, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(j45, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(j47, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(j48, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(j49, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(j50, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(j51, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(j52, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(j53, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(j54, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(j64, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(j55, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(j73, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(j56, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(j57, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(j58, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(j59, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(j60, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(j61, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(j62, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(j63, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(j65, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(j66, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(j67, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(j68, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(j69, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(j70, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(j71, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(j72, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(j74, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(j75, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(j76, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(j77, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(j78, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(j79, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(j80, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(j81, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))))))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(94, 94, 94)
-                        .addComponent(jButton1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton2)
-                        .addGap(10, 10, 10)))
-                .addContainerGap(104, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(256, 256, 256))
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(94, 94, 94)
+                        .addComponent(jButton1)
+                        .addGap(211, 211, 211)
+                        .addComponent(jButton2))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(71, 71, 71)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(c10, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(c11, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(c12, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(c13, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(c14, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(c15, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(c16, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(c17, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(c18, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(c1, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(c2, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(c3, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(c4, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(c5, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(c6, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(c7, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(c8, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(c9, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(c19, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(c20, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(c21, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(c22, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(c23, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(c24, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(c25, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(c26, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(c27, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(c28, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(c29, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(c30, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(c31, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(c32, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(c33, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(c34, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(c35, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(c36, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(c37, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(c38, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(c39, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(c40, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(c41, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(c42, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(c43, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(c44, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(c45, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(c46, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(c47, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(c48, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(c49, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(c50, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(c51, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(c52, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(c53, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(c54, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(c55, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(c56, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(c57, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(c58, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(c59, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(c60, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(c61, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(c62, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(c63, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(c64, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(c65, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(c66, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(c67, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(c68, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(c69, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(c70, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(c71, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(c72, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(c73, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(c74, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(c75, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(c76, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(c77, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(c78, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(c79, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(c80, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(c81, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                .addContainerGap(105, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -965,439 +967,533 @@ public class aahoSudoku extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton2)
                     .addComponent(jButton1))
-                .addGap(52, 52, 52)
+                .addGap(41, 41, 41)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(j1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(j2, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(j3, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(j4, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(j5, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(j6, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(j7, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(j8, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(j9, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(c1, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(c2, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(c3, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(c4, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(c5, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(c6, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(c7, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(c8, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(c9, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(j10, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(j11, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(j12, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(j13, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(j14, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(j15, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(j16, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(j17, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(j18, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(c10, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(c11, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(c12, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(c13, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(c14, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(c15, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(c16, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(c17, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(c18, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(j19, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(j20, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(j21, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(j22, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(j23, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(j24, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(j25, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(j26, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(j27, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(c19, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(c20, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(c21, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(c22, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(c23, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(c24, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(c25, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(c26, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(c27, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(j28, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(j29, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(j30, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(j31, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(j32, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(j33, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(j34, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(j35, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(j36, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(c28, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(c29, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(c30, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(c31, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(c32, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(c33, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(c34, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(c35, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(c36, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(j37, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(j38, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(j39, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(j40, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(j41, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(j42, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(j43, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(j44, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(j45, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(c37, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(c38, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(c39, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(c40, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(c41, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(c42, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(c43, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(c44, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(c45, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(j46, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(j47, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(j48, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(j49, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(j50, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(j51, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(j52, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(j53, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(j54, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(c46, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(c47, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(c48, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(c49, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(c50, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(c51, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(c52, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(c53, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(c54, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(j55, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(j56, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(j57, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(j58, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(j59, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(j60, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(j61, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(j62, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(j63, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(c55, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(c56, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(c57, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(c58, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(c59, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(c60, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(c61, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(c62, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(c63, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(j64, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(j65, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(j66, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(j67, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(j68, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(j69, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(j70, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(j71, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(j72, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(c64, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(c65, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(c66, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(c67, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(c68, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(c69, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(c70, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(c71, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(c72, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(j73, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(j74, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(j75, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(j76, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(j77, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(j78, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(j79, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(j80, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(j81, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(30, Short.MAX_VALUE))
+                    .addComponent(c73, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(c74, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(c75, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(c76, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(c77, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(c78, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(c79, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(c80, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(c81, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(28, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void j14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j14ActionPerformed
-        sudokumatrix[1][4]= Integer.parseInt(j14.getText());// TODO add your handling code here:
-    }//GEN-LAST:event_j14ActionPerformed
-
-    private void j15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j15ActionPerformed
-       sudokumatrix[1][5]= Integer.parseInt(j15.getText()); // TODO add your handling code here:
-    }//GEN-LAST:event_j15ActionPerformed
-
-    private void j16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j16ActionPerformed
-       sudokumatrix[1][6]= Integer.parseInt(j16.getText()); // TODO add your handling code here:
-    }//GEN-LAST:event_j16ActionPerformed
-
-    private void j17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j17ActionPerformed
-        sudokumatrix[1][7]= Integer.parseInt(j17.getText());// TODO add your handling code here:
-    }//GEN-LAST:event_j17ActionPerformed
-
-    private void j18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j18ActionPerformed
-       sudokumatrix[1][8]= Integer.parseInt(j18.getText()); // TODO add your handling code here:
-    }//GEN-LAST:event_j18ActionPerformed
-
-    private void j19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j19ActionPerformed
-        sudokumatrix[2][0]= Integer.parseInt(j19.getText());// TODO add your handling code here:
-    }//GEN-LAST:event_j19ActionPerformed
-
-    private void j20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j20ActionPerformed
-      sudokumatrix[2][1]= Integer.parseInt(j20.getText());  // TODO add your handling code here:
-    }//GEN-LAST:event_j20ActionPerformed
-
-    private void j21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j21ActionPerformed
-        sudokumatrix[2][2]= Integer.parseInt(j21.getText());// TODO add your handling code here:
-    }//GEN-LAST:event_j21ActionPerformed
-
-    private void j22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j22ActionPerformed
-      sudokumatrix[2][3]= Integer.parseInt(j22.getText());  // TODO add your handling code here:
-    }//GEN-LAST:event_j22ActionPerformed
-
-    private void j23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j23ActionPerformed
-       sudokumatrix[2][4]= Integer.parseInt(j23.getText()); // TODO add your handling code here:
-    }//GEN-LAST:event_j23ActionPerformed
-
-    private void j24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j24ActionPerformed
-      sudokumatrix[2][5]= Integer.parseInt(j24.getText());  // TODO add your handling code here:
-    }//GEN-LAST:event_j24ActionPerformed
-
-    private void j25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j25ActionPerformed
-      sudokumatrix[2][6]= Integer.parseInt(j25.getText());  // TODO add your handling code here:
-    }//GEN-LAST:event_j25ActionPerformed
-
-    private void j26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j26ActionPerformed
-       sudokumatrix[2][7]= Integer.parseInt(j26.getText()); // TODO add your handling code here:
-    }//GEN-LAST:event_j26ActionPerformed
-
-    private void j27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j27ActionPerformed
-      sudokumatrix[2][8]= Integer.parseInt(j27.getText());  // TODO add your handling code here:
-    }//GEN-LAST:event_j27ActionPerformed
-
-    private void j28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j28ActionPerformed
-       sudokumatrix[3][0]= Integer.parseInt(j28.getText()); // TODO add your handling code here:
-    }//GEN-LAST:event_j28ActionPerformed
-
-    private void j29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j29ActionPerformed
-        sudokumatrix[3][1]= Integer.parseInt(j29.getText());// TODO add your handling code here:
-    }//GEN-LAST:event_j29ActionPerformed
-
-    private void j30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j30ActionPerformed
-        sudokumatrix[3][2]= Integer.parseInt(j30.getText());// TODO add your handling code here:
-    }//GEN-LAST:event_j30ActionPerformed
-
-    private void j31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j31ActionPerformed
-       sudokumatrix[3][3]= Integer.parseInt(j31.getText()); // TODO add your handling code here:
-    }//GEN-LAST:event_j31ActionPerformed
-
-    private void j32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j32ActionPerformed
-       sudokumatrix[3][4]= Integer.parseInt(j32.getText()); // TODO add your handling code here:
-    }//GEN-LAST:event_j32ActionPerformed
-
-    private void j33ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j33ActionPerformed
-       sudokumatrix[3][5]= Integer.parseInt(j33.getText()); // TODO add your handling code here:
-    }//GEN-LAST:event_j33ActionPerformed
-
-    private void j34ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j34ActionPerformed
-       sudokumatrix[3][6]= Integer.parseInt(j34.getText()); // TODO add your handling code here:
-    }//GEN-LAST:event_j34ActionPerformed
-
-    private void j35ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j35ActionPerformed
-      sudokumatrix[3][7]= Integer.parseInt(j35.getText());  // TODO add your handling code here:
-    }//GEN-LAST:event_j35ActionPerformed
-
-    private void j36ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j36ActionPerformed
-      sudokumatrix[3][8]= Integer.parseInt(j36.getText());  // TODO add your handling code here:
-    }//GEN-LAST:event_j36ActionPerformed
-
-    private void j37ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j37ActionPerformed
-       sudokumatrix[4][0]= Integer.parseInt(j37.getText()); // TODO add your handling code here:
-    }//GEN-LAST:event_j37ActionPerformed
-
-    private void j38ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j38ActionPerformed
-      sudokumatrix[4][1]= Integer.parseInt(j38.getText());  // TODO add your handling code here:
-    }//GEN-LAST:event_j38ActionPerformed
-
-    private void j39ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j39ActionPerformed
-       sudokumatrix[4][2]= Integer.parseInt(j39.getText()); // TODO add your handling code here:
-    }//GEN-LAST:event_j39ActionPerformed
-
-    private void j40ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j40ActionPerformed
-       sudokumatrix[4][3]= Integer.parseInt(j40.getText()); // TODO add your handling code here:
-    }//GEN-LAST:event_j40ActionPerformed
-
-    private void j41ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j41ActionPerformed
-       sudokumatrix[4][4]= Integer.parseInt(j41.getText()); // TODO add your handling code here:
-    }//GEN-LAST:event_j41ActionPerformed
-
-    private void j42ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j42ActionPerformed
-       sudokumatrix[4][5]= Integer.parseInt(j42.getText()); // TODO add your handling code here:
-    }//GEN-LAST:event_j42ActionPerformed
-
-    private void j43ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j43ActionPerformed
-       sudokumatrix[4][6]= Integer.parseInt(j43.getText()); // TODO add your handling code here:
-    }//GEN-LAST:event_j43ActionPerformed
-
-    private void j44ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j44ActionPerformed
-       sudokumatrix[4][7]= Integer.parseInt(j44.getText()); // TODO add your handling code here:
-    }//GEN-LAST:event_j44ActionPerformed
-
-    private void j45ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j45ActionPerformed
-        sudokumatrix[4][8]= Integer.parseInt(j45.getText());// TODO add your handling code here:
-    }//GEN-LAST:event_j45ActionPerformed
-
-    private void j46ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j46ActionPerformed
-        sudokumatrix[5][0]= Integer.parseInt(j46.getText());// TODO add your handling code here:
-    }//GEN-LAST:event_j46ActionPerformed
-
-    private void j47ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j47ActionPerformed
-        sudokumatrix[5][1]= Integer.parseInt(j47.getText());// TODO add your handling code here:
-    }//GEN-LAST:event_j47ActionPerformed
-
-    private void j48ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j48ActionPerformed
-        sudokumatrix[5][2]= Integer.parseInt(j48.getText());// TODO add your handling code here:
-    }//GEN-LAST:event_j48ActionPerformed
-
-    private void j49ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j49ActionPerformed
-        sudokumatrix[5][3]= Integer.parseInt(j49.getText());// TODO add your handling code here:
-    }//GEN-LAST:event_j49ActionPerformed
-
-    private void j50ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j50ActionPerformed
-        sudokumatrix[5][4]= Integer.parseInt(j50.getText());// TODO add your handling code here:
-    }//GEN-LAST:event_j50ActionPerformed
-
-    private void j51ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j51ActionPerformed
-        sudokumatrix[5][5]= Integer.parseInt(j51.getText());// TODO add your handling code here:
-    }//GEN-LAST:event_j51ActionPerformed
-
-    private void j52ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j52ActionPerformed
-       sudokumatrix[5][6]= Integer.parseInt(j52.getText()); // TODO add your handling code here:
-    }//GEN-LAST:event_j52ActionPerformed
-
-    private void j53ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j53ActionPerformed
-       sudokumatrix[5][7]= Integer.parseInt(j53.getText()); // TODO add your handling code here:
-    }//GEN-LAST:event_j53ActionPerformed
-
-    private void j54ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j54ActionPerformed
-        sudokumatrix[5][8]= Integer.parseInt(j54.getText());// TODO add your handling code here:
-    }//GEN-LAST:event_j54ActionPerformed
-
-    private void j55ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j55ActionPerformed
-        sudokumatrix[6][0]= Integer.parseInt(j55.getText());// TODO add your handling code here:
-    }//GEN-LAST:event_j55ActionPerformed
-
-    private void j56ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j56ActionPerformed
-        sudokumatrix[6][1]= Integer.parseInt(j56.getText());// TODO add your handling code here:
-    }//GEN-LAST:event_j56ActionPerformed
-
-    private void j57ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j57ActionPerformed
-        sudokumatrix[6][2]= Integer.parseInt(j57.getText());// TODO add your handling code here:
-    }//GEN-LAST:event_j57ActionPerformed
-
-    private void j58ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j58ActionPerformed
-        sudokumatrix[6][3]= Integer.parseInt(j58.getText());// TODO add your handling code here:
-    }//GEN-LAST:event_j58ActionPerformed
-
-    private void j59ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j59ActionPerformed
-       sudokumatrix[6][4]= Integer.parseInt(j59.getText()); // TODO add your handling code here:
-    }//GEN-LAST:event_j59ActionPerformed
-
-    private void j60ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j60ActionPerformed
-       sudokumatrix[6][5]= Integer.parseInt(j60.getText()); // TODO add your handling code here:
-    }//GEN-LAST:event_j60ActionPerformed
-
-    private void j61ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j61ActionPerformed
-        sudokumatrix[6][6]= Integer.parseInt(j61.getText());// TODO add your handling code here:
-    }//GEN-LAST:event_j61ActionPerformed
-
-    private void j62ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j62ActionPerformed
-        sudokumatrix[6][7]= Integer.parseInt(j62.getText());// TODO add your handling code here:
-    }//GEN-LAST:event_j62ActionPerformed
-
-    private void j63ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j63ActionPerformed
-        sudokumatrix[6][8]= Integer.parseInt(j63.getText());// TODO add your handling code here:
-    }//GEN-LAST:event_j63ActionPerformed
-
-    private void j64ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j64ActionPerformed
-        sudokumatrix[7][0]= Integer.parseInt(j64.getText());// TODO add your handling code here:
-    }//GEN-LAST:event_j64ActionPerformed
-
-    private void j65ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j65ActionPerformed
-       sudokumatrix[7][1]= Integer.parseInt(j65.getText()); // TODO add your handling code here:
-    }//GEN-LAST:event_j65ActionPerformed
-
-    private void j66ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j66ActionPerformed
-        sudokumatrix[7][2]= Integer.parseInt(j66.getText());// TODO add your handling code here:
-    }//GEN-LAST:event_j66ActionPerformed
-
-    private void j67ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j67ActionPerformed
-        sudokumatrix[7][3]= Integer.parseInt(j67.getText());// TODO add your handling code here:
-    }//GEN-LAST:event_j67ActionPerformed
-
-    private void j68ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j68ActionPerformed
-        sudokumatrix[7][4]= Integer.parseInt(j68.getText());// TODO add your handling code here:
-    }//GEN-LAST:event_j68ActionPerformed
-
-    private void j69ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j69ActionPerformed
-        sudokumatrix[7][5]= Integer.parseInt(j69.getText());// TODO add your handling code here:
-    }//GEN-LAST:event_j69ActionPerformed
-
-    private void j70ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j70ActionPerformed
-       sudokumatrix[7][6]= Integer.parseInt(j70.getText()); // TODO add your handling code here:
-    }//GEN-LAST:event_j70ActionPerformed
-
-    private void j71ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j71ActionPerformed
-       sudokumatrix[7][7]= Integer.parseInt(j71.getText()); // TODO add your handling code here:
-    }//GEN-LAST:event_j71ActionPerformed
-
-    private void j72ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j72ActionPerformed
-        sudokumatrix[7][8]= Integer.parseInt(j72.getText());// TODO add your handling code here:
-    }//GEN-LAST:event_j72ActionPerformed
-
-    private void j73ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j73ActionPerformed
-       sudokumatrix[8][0]= Integer.parseInt(j73.getText()); // TODO add your handling code here:
-    }//GEN-LAST:event_j73ActionPerformed
-
-    private void j74ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j74ActionPerformed
-        sudokumatrix[8][1]= Integer.parseInt(j74.getText());// TODO add your handling code here:
-    }//GEN-LAST:event_j74ActionPerformed
-
-    private void j75ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j75ActionPerformed
-       sudokumatrix[8][2]= Integer.parseInt(j75.getText()); // TODO add your handling code here:
-    }//GEN-LAST:event_j75ActionPerformed
-
-    private void j76ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j76ActionPerformed
-        sudokumatrix[8][3]= Integer.parseInt(j76.getText());// TODO add your handling code here:
-    }//GEN-LAST:event_j76ActionPerformed
-
-    private void j77ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j77ActionPerformed
-        sudokumatrix[8][4]= Integer.parseInt(j77.getText());// TODO add your handling code here:
-    }//GEN-LAST:event_j77ActionPerformed
-
-    private void j78ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j78ActionPerformed
-        sudokumatrix[8][5]= Integer.parseInt(j78.getText());// TODO add your handling code here:
-    }//GEN-LAST:event_j78ActionPerformed
-
-    private void j79ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j79ActionPerformed
-        sudokumatrix[8][6]= Integer.parseInt(j79.getText());// TODO add your handling code here:
-    }//GEN-LAST:event_j79ActionPerformed
-
-    private void j80ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j80ActionPerformed
-        sudokumatrix[8][7]= Integer.parseInt(j80.getText());// TODO add your handling code here:
-    }//GEN-LAST:event_j80ActionPerformed
-
-    private void j81ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j81ActionPerformed
-        sudokumatrix[8][8]= Integer.parseInt(j81.getText());// TODO add your handling code here:
-    }//GEN-LAST:event_j81ActionPerformed
-
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
+      count=0;
+      int i;
+      for(i=0;i<81;i++)
+          top[i]=-1;
+        if(sudoku(0,0))
+      {
+          print();            
+          if(count>1) JOptionPane.showMessageDialog(rootPane,"More than one solution exist for this sudoku");
+      }
+      else JOptionPane.showMessageDialog(rootPane,"NO solution Exist for this Sudoku.");
+       for(i=0;i<9;i++)
+          for(int j=0;j<9;j++)
+              sudokumatrix[i][j]=0;
+// TODO add your handling code here:
     }//GEN-LAST:event_jButton2ActionPerformed
 
-    private void j1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j1ActionPerformed
-     sudokumatrix[0][0]= Integer.parseInt(j1.getText());   // TODO add your handling code here:
-    }//GEN-LAST:event_j1ActionPerformed
+    private void c1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c1ActionPerformed
+        int a = c1.getSelectedIndex();
+        sudokumatrix[0][0] = a;
+// TODO add your handling code here:
+    }//GEN-LAST:event_c1ActionPerformed
 
-    private void j2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j2ActionPerformed
-        sudokumatrix[0][1]= Integer.parseInt(j2.getText());
-        System.out.println(j2.getText());// TODO add your handling code here:
-    }//GEN-LAST:event_j2ActionPerformed
+    private void c2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c2ActionPerformed
+        int a = c2.getSelectedIndex();
+        sudokumatrix[0][1] = a;// TODO add your handling code here:
+    }//GEN-LAST:event_c2ActionPerformed
 
-    private void j3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j3ActionPerformed
-       sudokumatrix[0][2]= Integer.parseInt(j3.getText()); // TODO add your handling code here:
-    }//GEN-LAST:event_j3ActionPerformed
+    private void c3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c3ActionPerformed
+        int a = c3.getSelectedIndex();
+        sudokumatrix[0][2] = a;// TODO add your handling code here:
+    }//GEN-LAST:event_c3ActionPerformed
 
-    private void j4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j4ActionPerformed
-       sudokumatrix[0][3]= Integer.parseInt(j4.getText()); // TODO add your handling code here:
-    }//GEN-LAST:event_j4ActionPerformed
+    private void c4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c4ActionPerformed
+        int a = c4.getSelectedIndex();
+        sudokumatrix[0][3] = a;// TODO add your handling code here:
+    }//GEN-LAST:event_c4ActionPerformed
 
-    private void j5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j5ActionPerformed
-      sudokumatrix[0][4]= Integer.parseInt(j5.getText());  // TODO add your handling code here:
-    }//GEN-LAST:event_j5ActionPerformed
+    private void c5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c5ActionPerformed
+        int a = c5.getSelectedIndex();
+        sudokumatrix[0][4] = a;// TODO add your handling code here:
+    }//GEN-LAST:event_c5ActionPerformed
 
-    private void j6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j6ActionPerformed
-        sudokumatrix[0][5]= Integer.parseInt(j6.getText());// TODO add your handling code here:
-    }//GEN-LAST:event_j6ActionPerformed
+    private void c6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c6ActionPerformed
+        int a = c6.getSelectedIndex();
+        sudokumatrix[0][5] = a;// TODO add your handling code here:
+    }//GEN-LAST:event_c6ActionPerformed
 
-    private void j7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j7ActionPerformed
-       sudokumatrix[0][6]= Integer.parseInt(j7.getText()); // TODO add your handling code here:
-    }//GEN-LAST:event_j7ActionPerformed
+    private void c7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c7ActionPerformed
+        int a = c7.getSelectedIndex();
+        sudokumatrix[0][6] = a;// TODO add your handling code here:
+    }//GEN-LAST:event_c7ActionPerformed
 
-    private void j8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j8ActionPerformed
-       sudokumatrix[0][7]= Integer.parseInt(j8.getText()); // TODO add your handling code here:
-    }//GEN-LAST:event_j8ActionPerformed
+    private void c8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c8ActionPerformed
+        int a = c8.getSelectedIndex();
+        sudokumatrix[0][7] = a;// TODO add your handling code here:
+    }//GEN-LAST:event_c8ActionPerformed
 
-    private void j9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j9ActionPerformed
-       sudokumatrix[0][8]= Integer.parseInt(j9.getText()); // TODO add your handling code here:
-    }//GEN-LAST:event_j9ActionPerformed
+    private void c9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c9ActionPerformed
+        int a = c9.getSelectedIndex();
+        sudokumatrix[0][8] = a;// TODO add your handling code here:
+    }//GEN-LAST:event_c9ActionPerformed
 
-    private void j10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j10ActionPerformed
-       sudokumatrix[1][0]= Integer.parseInt(j10.getText()); // TODO add your handling code here:
-    }//GEN-LAST:event_j10ActionPerformed
+    private void c10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c10ActionPerformed
+        int a = c10.getSelectedIndex();
+        sudokumatrix[1][0] = a;// TODO add your handling code here:
+    }//GEN-LAST:event_c10ActionPerformed
 
-    private void j11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j11ActionPerformed
-     sudokumatrix[1][1]= Integer.parseInt(j11.getText());   // TODO add your handling code here:
-    }//GEN-LAST:event_j11ActionPerformed
+    private void c11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c11ActionPerformed
+        int a = c11.getSelectedIndex();
+        sudokumatrix[1][1] = a;// TODO add your handling code here:
+    }//GEN-LAST:event_c11ActionPerformed
 
-    private void j12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j12ActionPerformed
-       sudokumatrix[1][2]= Integer.parseInt(j12.getText()); // TODO add your handling code here:
-    }//GEN-LAST:event_j12ActionPerformed
+    private void c12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c12ActionPerformed
+        int a = c12.getSelectedIndex();
+        sudokumatrix[1][2] = a;// TODO add your handling code here:
+    }//GEN-LAST:event_c12ActionPerformed
 
-    private void j13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j13ActionPerformed
-      sudokumatrix[1][3]= Integer.parseInt(j13.getText());  // TODO add your handling code here:
-    }//GEN-LAST:event_j13ActionPerformed
+    private void c13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c13ActionPerformed
+        int a = c13.getSelectedIndex();
+        sudokumatrix[1][3] = a;// TODO add your handling code here:
+    }//GEN-LAST:event_c13ActionPerformed
+
+    private void c14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c14ActionPerformed
+        int a = c14.getSelectedIndex();
+        sudokumatrix[1][4] = a;// TODO add your handling code here:
+    }//GEN-LAST:event_c14ActionPerformed
+
+    private void c15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c15ActionPerformed
+        int a = c15.getSelectedIndex();
+        sudokumatrix[1][5] = a;// TODO add your handling code here:
+    }//GEN-LAST:event_c15ActionPerformed
+
+    private void c16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c16ActionPerformed
+        int a = c16.getSelectedIndex();
+        sudokumatrix[1][6] = a;// TODO add your handling code here:
+    }//GEN-LAST:event_c16ActionPerformed
+
+    private void c17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c17ActionPerformed
+        int a = c17.getSelectedIndex();
+        sudokumatrix[1][7] = a;// TODO add your handling code here:
+    }//GEN-LAST:event_c17ActionPerformed
+
+    private void c18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c18ActionPerformed
+        int a = c18.getSelectedIndex();
+        sudokumatrix[1][8] = a;// TODO add your handling code here:
+    }//GEN-LAST:event_c18ActionPerformed
+
+    private void c19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c19ActionPerformed
+        int a = c19.getSelectedIndex();
+        sudokumatrix[2][0] = a;// TODO add your handling code here:
+    }//GEN-LAST:event_c19ActionPerformed
+
+    private void c20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c20ActionPerformed
+       int a = c20.getSelectedIndex();
+        sudokumatrix[2][1] = a; // TODO add your handling code here:
+    }//GEN-LAST:event_c20ActionPerformed
+
+    private void c21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c21ActionPerformed
+        int a = c21.getSelectedIndex();
+        sudokumatrix[2][2] = a;// TODO add your handling code here:
+    }//GEN-LAST:event_c21ActionPerformed
+
+    private void c22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c22ActionPerformed
+        int a = c22.getSelectedIndex();
+        sudokumatrix[2][3] = a;// TODO add your handling code here:
+    }//GEN-LAST:event_c22ActionPerformed
+
+    private void c23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c23ActionPerformed
+        int a = c23.getSelectedIndex();
+        sudokumatrix[2][4] = a;// TODO add your handling code here:
+    }//GEN-LAST:event_c23ActionPerformed
+
+    private void c24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c24ActionPerformed
+        int a = c24.getSelectedIndex();
+        sudokumatrix[2][5] = a;// TODO add your handling code here:
+    }//GEN-LAST:event_c24ActionPerformed
+
+    private void c25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c25ActionPerformed
+        int a = c25.getSelectedIndex();
+        sudokumatrix[2][6] = a;// TODO add your handling code here:
+    }//GEN-LAST:event_c25ActionPerformed
+
+    private void c26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c26ActionPerformed
+        int a = c26.getSelectedIndex();
+        sudokumatrix[2][7] = a;// TODO add your handling code here:
+    }//GEN-LAST:event_c26ActionPerformed
+
+    private void c27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c27ActionPerformed
+        int a = c27.getSelectedIndex();
+        sudokumatrix[2][8] = a;// TODO add your handling code here:
+    }//GEN-LAST:event_c27ActionPerformed
+
+    private void c28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c28ActionPerformed
+        int a = c28.getSelectedIndex();
+        sudokumatrix[3][0] = a;// TODO add your handling code here:
+    }//GEN-LAST:event_c28ActionPerformed
+
+    private void c29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c29ActionPerformed
+        int a = c29.getSelectedIndex();
+        sudokumatrix[3][1] = a;// TODO add your handling code here:
+    }//GEN-LAST:event_c29ActionPerformed
+
+    private void c30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c30ActionPerformed
+        int a = c30.getSelectedIndex();
+        sudokumatrix[3][2] = a;// TODO add your handling code here:
+    }//GEN-LAST:event_c30ActionPerformed
+
+    private void c31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c31ActionPerformed
+        int a = c31.getSelectedIndex();
+        sudokumatrix[3][3] = a;// TODO add your handling code here:
+    }//GEN-LAST:event_c31ActionPerformed
+
+    private void c32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c32ActionPerformed
+        int a = c32.getSelectedIndex();
+        sudokumatrix[3][4] = a;// TODO add your handling code here:
+    }//GEN-LAST:event_c32ActionPerformed
+
+    private void c33ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c33ActionPerformed
+        int a = c33.getSelectedIndex();
+        sudokumatrix[3][5] = a;// TODO add your handling code here:
+    }//GEN-LAST:event_c33ActionPerformed
+
+    private void c34ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c34ActionPerformed
+        int a = c34.getSelectedIndex();
+        sudokumatrix[3][6] = a;// TODO add your handling code here:
+    }//GEN-LAST:event_c34ActionPerformed
+
+    private void c35ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c35ActionPerformed
+        int a = c35.getSelectedIndex();
+        sudokumatrix[3][7] = a;// TODO add your handling code here:
+    }//GEN-LAST:event_c35ActionPerformed
+
+    private void c36ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c36ActionPerformed
+        int a = c36.getSelectedIndex();
+        sudokumatrix[3][8] = a;// TODO add your handling code here:
+    }//GEN-LAST:event_c36ActionPerformed
+
+    private void c37ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c37ActionPerformed
+       int a = c37.getSelectedIndex();
+        sudokumatrix[4][0] = a; // TODO add your handling code here:
+    }//GEN-LAST:event_c37ActionPerformed
+
+    private void c38ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c38ActionPerformed
+       int a = c38.getSelectedIndex();
+        sudokumatrix[4][1] = a; // TODO add your handling code here:
+    }//GEN-LAST:event_c38ActionPerformed
+
+    private void c39ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c39ActionPerformed
+        int a = c39.getSelectedIndex();
+        sudokumatrix[4][2] = a;// TODO add your handling code here:
+    }//GEN-LAST:event_c39ActionPerformed
+
+    private void c40ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c40ActionPerformed
+        int a = c40.getSelectedIndex();
+        sudokumatrix[4][3] = a;// TODO add your handling code here:
+    }//GEN-LAST:event_c40ActionPerformed
+
+    private void c41ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c41ActionPerformed
+        int a = c41.getSelectedIndex();
+        sudokumatrix[4][4] = a;// TODO add your handling code here:
+    }//GEN-LAST:event_c41ActionPerformed
+
+    private void c42ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c42ActionPerformed
+        int a = c42.getSelectedIndex();
+        sudokumatrix[4][5] = a;// TODO add your handling code here:
+    }//GEN-LAST:event_c42ActionPerformed
+
+    private void c43ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c43ActionPerformed
+        int a = c43.getSelectedIndex();
+        sudokumatrix[4][6] = a;// TODO add your handling code here:
+    }//GEN-LAST:event_c43ActionPerformed
+
+    private void c44ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c44ActionPerformed
+        int a = c44.getSelectedIndex();
+        sudokumatrix[4][7] = a;// TODO add your handling code here:
+    }//GEN-LAST:event_c44ActionPerformed
+
+    private void c45ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c45ActionPerformed
+        int a = c45.getSelectedIndex();
+        sudokumatrix[4][8] = a;// TODO add your handling code here:
+    }//GEN-LAST:event_c45ActionPerformed
+
+    private void c46ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c46ActionPerformed
+        int a = c46.getSelectedIndex();
+        sudokumatrix[5][0] = a;// TODO add your handling code here:
+    }//GEN-LAST:event_c46ActionPerformed
+
+    private void c47ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c47ActionPerformed
+        int a = c47.getSelectedIndex();
+        sudokumatrix[5][1] = a;// TODO add your handling code here:
+    }//GEN-LAST:event_c47ActionPerformed
+
+    private void c48ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c48ActionPerformed
+        int a = c48.getSelectedIndex();
+        sudokumatrix[5][2] = a;// TODO add your handling code here:
+    }//GEN-LAST:event_c48ActionPerformed
+
+    private void c49ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c49ActionPerformed
+        int a = c49.getSelectedIndex();
+        sudokumatrix[5][3] = a;// TODO add your handling code here:
+    }//GEN-LAST:event_c49ActionPerformed
+
+    private void c50ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c50ActionPerformed
+        int a = c50.getSelectedIndex();
+        sudokumatrix[5][4] = a;// TODO add your handling code here:
+    }//GEN-LAST:event_c50ActionPerformed
+
+    private void c51ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c51ActionPerformed
+        int a = c51.getSelectedIndex();
+        sudokumatrix[5][5] = a;// TODO add your handling code here:
+    }//GEN-LAST:event_c51ActionPerformed
+
+    private void c52ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c52ActionPerformed
+        int a = c52.getSelectedIndex();
+        sudokumatrix[5][6] = a;// TODO add your handling code here:
+    }//GEN-LAST:event_c52ActionPerformed
+
+    private void c53ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c53ActionPerformed
+        int a = c53.getSelectedIndex();
+        sudokumatrix[5][7] = a;// TODO add your handling code here:
+    }//GEN-LAST:event_c53ActionPerformed
+
+    private void c54ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c54ActionPerformed
+        int a = c54.getSelectedIndex();
+        sudokumatrix[5][8] = a;// TODO add your handling code here:
+    }//GEN-LAST:event_c54ActionPerformed
+
+    private void c55ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c55ActionPerformed
+        int a = c55.getSelectedIndex();
+        sudokumatrix[6][0] = a;// TODO add your handling code here:
+    }//GEN-LAST:event_c55ActionPerformed
+
+    private void c56ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c56ActionPerformed
+       int a = c56.getSelectedIndex();
+        sudokumatrix[6][1] = a; // TODO add your handling code here:
+    }//GEN-LAST:event_c56ActionPerformed
+
+    private void c57ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c57ActionPerformed
+        int a = c57.getSelectedIndex();
+        sudokumatrix[6][2] = a;// TODO add your handling code here:
+    }//GEN-LAST:event_c57ActionPerformed
+
+    private void c58ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c58ActionPerformed
+       int a = c58.getSelectedIndex();
+        sudokumatrix[6][3] = a; // TODO add your handling code here:
+    }//GEN-LAST:event_c58ActionPerformed
+
+    private void c59ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c59ActionPerformed
+        int a = c59.getSelectedIndex();
+        sudokumatrix[6][4] = a;// TODO add your handling code here:
+    }//GEN-LAST:event_c59ActionPerformed
+
+    private void c60ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c60ActionPerformed
+        int a = c60.getSelectedIndex();
+        sudokumatrix[6][5] = a;// TODO add your handling code here:
+    }//GEN-LAST:event_c60ActionPerformed
+
+    private void c61ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c61ActionPerformed
+        int a = c61.getSelectedIndex();
+        sudokumatrix[6][6] = a;// TODO add your handling code here:
+    }//GEN-LAST:event_c61ActionPerformed
+
+    private void c62ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c62ActionPerformed
+        int a = c62.getSelectedIndex();
+        sudokumatrix[6][7] = a;// TODO add your handling code here:
+    }//GEN-LAST:event_c62ActionPerformed
+
+    private void c63ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c63ActionPerformed
+        int a = c63.getSelectedIndex();
+        sudokumatrix[6][8] = a;// TODO add your handling code here:
+    }//GEN-LAST:event_c63ActionPerformed
+
+    private void c64ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c64ActionPerformed
+        int a = c64.getSelectedIndex();
+        sudokumatrix[7][0] = a;// TODO add your handling code here:
+    }//GEN-LAST:event_c64ActionPerformed
+
+    private void c65ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c65ActionPerformed
+        int a = c65.getSelectedIndex();
+        sudokumatrix[7][1] = a;// TODO add your handling code here:
+    }//GEN-LAST:event_c65ActionPerformed
+
+    private void c66ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c66ActionPerformed
+        int a = c66.getSelectedIndex();
+        sudokumatrix[7][2] = a;// TODO add your handling code here:
+    }//GEN-LAST:event_c66ActionPerformed
+
+    private void c67ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c67ActionPerformed
+        int a = c67.getSelectedIndex();
+        sudokumatrix[7][3] = a;// TODO add your handling code here:
+    }//GEN-LAST:event_c67ActionPerformed
+
+    private void c68ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c68ActionPerformed
+        int a = c68.getSelectedIndex();
+        sudokumatrix[7][4] = a;// TODO add your handling code here:
+    }//GEN-LAST:event_c68ActionPerformed
+
+    private void c69ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c69ActionPerformed
+        int a = c69.getSelectedIndex();
+        sudokumatrix[7][5] = a;// TODO add your handling code here:
+    }//GEN-LAST:event_c69ActionPerformed
+
+    private void c70ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c70ActionPerformed
+        int a = c70.getSelectedIndex();
+        sudokumatrix[7][6] = a;// TODO add your handling code here:
+    }//GEN-LAST:event_c70ActionPerformed
+
+    private void c71ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c71ActionPerformed
+        int a = c71.getSelectedIndex();
+        sudokumatrix[7][7] = a;// TODO add your handling code here:
+    }//GEN-LAST:event_c71ActionPerformed
+
+    private void c72ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c72ActionPerformed
+        int a = c72.getSelectedIndex();
+        sudokumatrix[7][8] = a;// TODO add your handling code here:
+    }//GEN-LAST:event_c72ActionPerformed
+
+    private void c73ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c73ActionPerformed
+        int a = c73.getSelectedIndex();
+        sudokumatrix[8][0] = a;// TODO add your handling code here:
+    }//GEN-LAST:event_c73ActionPerformed
+
+    private void c74ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c74ActionPerformed
+        int a = c74.getSelectedIndex();
+        sudokumatrix[8][1] = a;// TODO add your handling code here:
+    }//GEN-LAST:event_c74ActionPerformed
+
+    private void c75ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c75ActionPerformed
+        int a = c75.getSelectedIndex();
+        sudokumatrix[8][2] = a;// TODO add your handling code here:
+    }//GEN-LAST:event_c75ActionPerformed
+
+    private void c76ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c76ActionPerformed
+        int a = c76.getSelectedIndex();
+        sudokumatrix[8][3] = a;// TODO add your handling code here:
+    }//GEN-LAST:event_c76ActionPerformed
+
+    private void c77ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c77ActionPerformed
+        int a = c77.getSelectedIndex();
+        sudokumatrix[8][4] = a;// TODO add your handling code here:
+    }//GEN-LAST:event_c77ActionPerformed
+
+    private void c78ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c78ActionPerformed
+        int a = c78.getSelectedIndex();
+        sudokumatrix[8][5] = a;// TODO add your handling code here:
+    }//GEN-LAST:event_c78ActionPerformed
+
+    private void c79ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c79ActionPerformed
+        int a = c79.getSelectedIndex();
+        sudokumatrix[8][6] = a;// TODO add your handling code here:
+    }//GEN-LAST:event_c79ActionPerformed
+
+    private void c80ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c80ActionPerformed
+       int a = c80.getSelectedIndex();
+        sudokumatrix[8][7] = a; // TODO add your handling code here:
+    }//GEN-LAST:event_c80ActionPerformed
+
+    private void c81ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c81ActionPerformed
+        int a = c81.getSelectedIndex();
+        sudokumatrix[8][8] = a;// TODO add your handling code here:
+    }//GEN-LAST:event_c81ActionPerformed
 int sudokumatrix[][]= new int[9][9];
 int top[]=new int[81],count;
 int stack[][] = new int[81][9];
@@ -1430,11 +1526,12 @@ int pop(int s)
         }
         return sudoku(x+(y+1)/9,(y+1)%9);
     }
-    return false;
+    count++;
+    return true;
 }
 void all_possible_entries(int x,int y)
 {
-    int arr[]= new int[9];
+    int arr[]= new int[10];
     int i,j,bx,by;
     for(j=0;j<9;j++)
         arr[sudokumatrix[x][j]]=1;
@@ -1449,30 +1546,114 @@ void all_possible_entries(int x,int y)
         if(arr[i]==0)
         push(x*9+y,i);
 }
-/*void input()
-{ 
-    int i=0,j=0;
-    sudokumatrix[i][(j++)%9] = Integer.parseInt(j1.getText());
-    sudokumatrix[i][(j++)%9] = Integer.parseInt(j2.getText());
-    sudokumatrix[i][(j++)%9] = Integer.parseInt(j3.getText());
-    sudokumatrix[i][(j++)%9] = Integer.parseInt(j4.getText());
-    sudokumatrix[i][(j++)%9] = Integer.parseInt(j5.getText());
-    sudokumatrix[i][(j++)%9] = Integer.parseInt(j6.getText());
-    sudokumatrix[i][(j++)%9] = Integer.parseInt(j7.getText());
-    sudokumatrix[i][(j++)%9] = Integer.parseInt(j8.getText());
-    sudokumatrix[i++][(j++)%9] = Integer.parseInt(j9.getText());
-    sudokumatrix[i][(j++)%9] = Integer.parseInt(j10.getText());
-    sudokumatrix[i][(j++)%9] = Integer.parseInt(j11.getText());
-    sudokumatrix[i][(j++)%9] = Integer.parseInt(j12.getText());
-    sudokumatrix[i][(j++)%9] = Integer.parseInt(j13.getText());
-    sudokumatrix[i][(j++)%9] = Integer.parseInt(j14.getText());
-    sudokumatrix[i][(j++)%9] = Integer.parseInt(j15.getText());
-    sudokumatrix[i][(j++)%9] = Integer.parseInt(j16.getText());
-    sudokumatrix[i][(j++)%9] = Integer.parseInt(j17.getText());
-    sudokumatrix[i++][(j++)%9] = Integer.parseInt(j18.getText());
-    sudokumatrix[i][(j++)%9] = Integer.parseInt(j19.getText());
-    sudokumatrix[i][(j++)%9] = Integer.parseInt(j20.getText());
-}*/
+ void print()
+{ int i=0,j=0;
+    for(i=0;i<9;i++)
+    {
+        for(j=0;j<9;j++)
+            System.out.print(sudokumatrix[i][j]+" ");
+        System.out.println();
+    }
+    i=0;
+    j=0;
+    c1.setSelectedIndex(sudokumatrix[i][j++]);
+    c2.setSelectedIndex(sudokumatrix[i][j++]);
+    c3.setSelectedIndex(sudokumatrix[i][j++]);
+    c4.setSelectedIndex(sudokumatrix[i][j++]);
+    c5.setSelectedIndex(sudokumatrix[i][j++]);
+    c6.setSelectedIndex(sudokumatrix[i][j++]);
+    c7.setSelectedIndex(sudokumatrix[i][j++]);
+    c8.setSelectedIndex(sudokumatrix[i][j++]);
+    c9.setSelectedIndex(sudokumatrix[i][j++]);
+    i=1;
+    j=0;
+     c10.setSelectedIndex(sudokumatrix[i][j++]);
+     c11.setSelectedIndex(sudokumatrix[i][j++]);
+     c12.setSelectedIndex(sudokumatrix[i][j++]);
+     c13.setSelectedIndex(sudokumatrix[i][j++]);
+     c14.setSelectedIndex(sudokumatrix[i][j++]);
+     c15.setSelectedIndex(sudokumatrix[i][j++]);
+     c16.setSelectedIndex(sudokumatrix[i][j++]);
+     c17.setSelectedIndex(sudokumatrix[i][j++]);
+     c18.setSelectedIndex(sudokumatrix[i][j++]);
+     i=2;
+     j=0;
+     c19.setSelectedIndex(sudokumatrix[i][j++]);
+     c20.setSelectedIndex(sudokumatrix[i][j++]);
+     c21.setSelectedIndex(sudokumatrix[i][j++]);
+     c22.setSelectedIndex(sudokumatrix[i][j++]);
+     c23.setSelectedIndex(sudokumatrix[i][j++]);
+     c24.setSelectedIndex(sudokumatrix[i][j++]);
+     c25.setSelectedIndex(sudokumatrix[i][j++]);
+     c26.setSelectedIndex(sudokumatrix[i][j++]);
+     c27.setSelectedIndex(sudokumatrix[i][j++]);
+     i=3;
+     j=0;
+     c28.setSelectedIndex(sudokumatrix[i][j++]);
+     c29.setSelectedIndex(sudokumatrix[i][j++]);
+     c30.setSelectedIndex(sudokumatrix[i][j++]);
+     c31.setSelectedIndex(sudokumatrix[i][j++]);
+     c32.setSelectedIndex(sudokumatrix[i][j++]);
+     c33.setSelectedIndex(sudokumatrix[i][j++]);
+     c34.setSelectedIndex(sudokumatrix[i][j++]);
+     c35.setSelectedIndex(sudokumatrix[i][j++]);
+     c36.setSelectedIndex(sudokumatrix[i][j++]);
+     i=4;
+     j=0;
+     c37.setSelectedIndex(sudokumatrix[i][j++]);
+     c38.setSelectedIndex(sudokumatrix[i][j++]);
+     c39.setSelectedIndex(sudokumatrix[i][j++]);
+     c40.setSelectedIndex(sudokumatrix[i][j++]);
+     c41.setSelectedIndex(sudokumatrix[i][j++]);
+     c42.setSelectedIndex(sudokumatrix[i][j++]);
+     c43.setSelectedIndex(sudokumatrix[i][j++]);
+     c44.setSelectedIndex(sudokumatrix[i][j++]);
+     c45.setSelectedIndex(sudokumatrix[i][j++]);
+     i=5;
+     j=0;
+     c46.setSelectedIndex(sudokumatrix[i][j++]);
+     c47.setSelectedIndex(sudokumatrix[i][j++]);
+     c48.setSelectedIndex(sudokumatrix[i][j++]);
+     c49.setSelectedIndex(sudokumatrix[i][j++]);
+     c50.setSelectedIndex(sudokumatrix[i][j++]);
+     c51.setSelectedIndex(sudokumatrix[i][j++]);
+     c52.setSelectedIndex(sudokumatrix[i][j++]);
+     c53.setSelectedIndex(sudokumatrix[i][j++]);
+     c54.setSelectedIndex(sudokumatrix[i][j++]);
+     i=6;
+     j=0;
+     c55.setSelectedIndex(sudokumatrix[i][j++]);
+     c56.setSelectedIndex(sudokumatrix[i][j++]);
+     c57.setSelectedIndex(sudokumatrix[i][j++]);
+     c58.setSelectedIndex(sudokumatrix[i][j++]);
+     c59.setSelectedIndex(sudokumatrix[i][j++]);
+     c60.setSelectedIndex(sudokumatrix[i][j++]);
+     c61.setSelectedIndex(sudokumatrix[i][j++]);
+     c62.setSelectedIndex(sudokumatrix[i][j++]);
+     c63.setSelectedIndex(sudokumatrix[i][j++]);
+     i=7;
+     j=0;
+     c64.setSelectedIndex(sudokumatrix[i][j++]);
+     c65.setSelectedIndex(sudokumatrix[i][j++]);
+     c66.setSelectedIndex(sudokumatrix[i][j++]);
+     c67.setSelectedIndex(sudokumatrix[i][j++]);
+     c68.setSelectedIndex(sudokumatrix[i][j++]);
+     c69.setSelectedIndex(sudokumatrix[i][j++]);
+     c70.setSelectedIndex(sudokumatrix[i][j++]);
+     c71.setSelectedIndex(sudokumatrix[i][j++]);
+     c72.setSelectedIndex(sudokumatrix[i][j++]);
+     i=8;j=0;
+     c73.setSelectedIndex(sudokumatrix[i][j++]);
+     c74.setSelectedIndex(sudokumatrix[i][j++]);
+     c75.setSelectedIndex(sudokumatrix[i][j++]);
+     c76.setSelectedIndex(sudokumatrix[i][j++]);
+     c77.setSelectedIndex(sudokumatrix[i][j++]);
+     c78.setSelectedIndex(sudokumatrix[i][j++]);
+     c79.setSelectedIndex(sudokumatrix[i][j++]);
+     c80.setSelectedIndex(sudokumatrix[i][j++]);
+     c81.setSelectedIndex(sudokumatrix[i][j++]);
+     
+}
     /**
      * @param args the command line arguments
      */
@@ -1506,90 +1687,91 @@ void all_possible_entries(int x,int y)
                 new aahoSudoku().setVisible(true);
             }
         });
+ 
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JTextField j1;
-    private javax.swing.JTextField j10;
-    private javax.swing.JTextField j11;
-    private javax.swing.JTextField j12;
-    private javax.swing.JTextField j13;
-    private javax.swing.JTextField j14;
-    private javax.swing.JTextField j15;
-    private javax.swing.JTextField j16;
-    private javax.swing.JTextField j17;
-    private javax.swing.JTextField j18;
-    private javax.swing.JTextField j19;
-    private javax.swing.JTextField j2;
-    private javax.swing.JTextField j20;
-    private javax.swing.JTextField j21;
-    private javax.swing.JTextField j22;
-    private javax.swing.JTextField j23;
-    private javax.swing.JTextField j24;
-    private javax.swing.JTextField j25;
-    private javax.swing.JTextField j26;
-    private javax.swing.JTextField j27;
-    private javax.swing.JTextField j28;
-    private javax.swing.JTextField j29;
-    private javax.swing.JTextField j3;
-    private javax.swing.JTextField j30;
-    private javax.swing.JTextField j31;
-    private javax.swing.JTextField j32;
-    private javax.swing.JTextField j33;
-    private javax.swing.JTextField j34;
-    private javax.swing.JTextField j35;
-    private javax.swing.JTextField j36;
-    private javax.swing.JTextField j37;
-    private javax.swing.JTextField j38;
-    private javax.swing.JTextField j39;
-    private javax.swing.JTextField j4;
-    private javax.swing.JTextField j40;
-    private javax.swing.JTextField j41;
-    private javax.swing.JTextField j42;
-    private javax.swing.JTextField j43;
-    private javax.swing.JTextField j44;
-    private javax.swing.JTextField j45;
-    private javax.swing.JTextField j46;
-    private javax.swing.JTextField j47;
-    private javax.swing.JTextField j48;
-    private javax.swing.JTextField j49;
-    private javax.swing.JTextField j5;
-    private javax.swing.JTextField j50;
-    private javax.swing.JTextField j51;
-    private javax.swing.JTextField j52;
-    private javax.swing.JTextField j53;
-    private javax.swing.JTextField j54;
-    private javax.swing.JTextField j55;
-    private javax.swing.JTextField j56;
-    private javax.swing.JTextField j57;
-    private javax.swing.JTextField j58;
-    private javax.swing.JTextField j59;
-    private javax.swing.JTextField j6;
-    private javax.swing.JTextField j60;
-    private javax.swing.JTextField j61;
-    private javax.swing.JTextField j62;
-    private javax.swing.JTextField j63;
-    private javax.swing.JTextField j64;
-    private javax.swing.JTextField j65;
-    private javax.swing.JTextField j66;
-    private javax.swing.JTextField j67;
-    private javax.swing.JTextField j68;
-    private javax.swing.JTextField j69;
-    private javax.swing.JTextField j7;
-    private javax.swing.JTextField j70;
-    private javax.swing.JTextField j71;
-    private javax.swing.JTextField j72;
-    private javax.swing.JTextField j73;
-    private javax.swing.JTextField j74;
-    private javax.swing.JTextField j75;
-    private javax.swing.JTextField j76;
-    private javax.swing.JTextField j77;
-    private javax.swing.JTextField j78;
-    private javax.swing.JTextField j79;
-    private javax.swing.JTextField j8;
-    private javax.swing.JTextField j80;
-    private javax.swing.JTextField j81;
-    private javax.swing.JTextField j9;
+    private javax.swing.JComboBox c1;
+    private javax.swing.JComboBox c10;
+    private javax.swing.JComboBox c11;
+    private javax.swing.JComboBox c12;
+    private javax.swing.JComboBox c13;
+    private javax.swing.JComboBox c14;
+    private javax.swing.JComboBox c15;
+    private javax.swing.JComboBox c16;
+    private javax.swing.JComboBox c17;
+    private javax.swing.JComboBox c18;
+    private javax.swing.JComboBox c19;
+    private javax.swing.JComboBox c2;
+    private javax.swing.JComboBox c20;
+    private javax.swing.JComboBox c21;
+    private javax.swing.JComboBox c22;
+    private javax.swing.JComboBox c23;
+    private javax.swing.JComboBox c24;
+    private javax.swing.JComboBox c25;
+    private javax.swing.JComboBox c26;
+    private javax.swing.JComboBox c27;
+    private javax.swing.JComboBox c28;
+    private javax.swing.JComboBox c29;
+    private javax.swing.JComboBox c3;
+    private javax.swing.JComboBox c30;
+    private javax.swing.JComboBox c31;
+    private javax.swing.JComboBox c32;
+    private javax.swing.JComboBox c33;
+    private javax.swing.JComboBox c34;
+    private javax.swing.JComboBox c35;
+    private javax.swing.JComboBox c36;
+    private javax.swing.JComboBox c37;
+    private javax.swing.JComboBox c38;
+    private javax.swing.JComboBox c39;
+    private javax.swing.JComboBox c4;
+    private javax.swing.JComboBox c40;
+    private javax.swing.JComboBox c41;
+    private javax.swing.JComboBox c42;
+    private javax.swing.JComboBox c43;
+    private javax.swing.JComboBox c44;
+    private javax.swing.JComboBox c45;
+    private javax.swing.JComboBox c46;
+    private javax.swing.JComboBox c47;
+    private javax.swing.JComboBox c48;
+    private javax.swing.JComboBox c49;
+    private javax.swing.JComboBox c5;
+    private javax.swing.JComboBox c50;
+    private javax.swing.JComboBox c51;
+    private javax.swing.JComboBox c52;
+    private javax.swing.JComboBox c53;
+    private javax.swing.JComboBox c54;
+    private javax.swing.JComboBox c55;
+    private javax.swing.JComboBox c56;
+    private javax.swing.JComboBox c57;
+    private javax.swing.JComboBox c58;
+    private javax.swing.JComboBox c59;
+    private javax.swing.JComboBox c6;
+    private javax.swing.JComboBox c60;
+    private javax.swing.JComboBox c61;
+    private javax.swing.JComboBox c62;
+    private javax.swing.JComboBox c63;
+    private javax.swing.JComboBox c64;
+    private javax.swing.JComboBox c65;
+    private javax.swing.JComboBox c66;
+    private javax.swing.JComboBox c67;
+    private javax.swing.JComboBox c68;
+    private javax.swing.JComboBox c69;
+    private javax.swing.JComboBox c7;
+    private javax.swing.JComboBox c70;
+    private javax.swing.JComboBox c71;
+    private javax.swing.JComboBox c72;
+    private javax.swing.JComboBox c73;
+    private javax.swing.JComboBox c74;
+    private javax.swing.JComboBox c75;
+    private javax.swing.JComboBox c76;
+    private javax.swing.JComboBox c77;
+    private javax.swing.JComboBox c78;
+    private javax.swing.JComboBox c79;
+    private javax.swing.JComboBox c8;
+    private javax.swing.JComboBox c80;
+    private javax.swing.JComboBox c81;
+    private javax.swing.JComboBox c9;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
