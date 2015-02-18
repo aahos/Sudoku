@@ -5,7 +5,10 @@
  */
 package sudoku;
 
+import java.awt.Font;
 import javax.swing.JOptionPane;
+import javax.swing.JComboBox;
+import javax.swing.MutableComboBoxModel;
 
 /**
  *
@@ -23,6 +26,7 @@ public class aahoSudoku extends javax.swing.JFrame {
     private void initcustom()
     {
         chkbtn.setEnabled(false);
+        
     }
 
     /**
@@ -1571,11 +1575,13 @@ public class aahoSudoku extends javax.swing.JFrame {
         for(int i=0;i<81;i++)
             top[i]=-1;
         print();
+        
 // TODO add your handling code here:
     }//GEN-LAST:event_clrbtnActionPerformed
 
     private void lockbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lockbtnActionPerformed
-        // TODO add your handling code here:
+        
+          lock();  // TODO add your handling code here:
     }//GEN-LAST:event_lockbtnActionPerformed
 int sudokumatrix[][]= new int[9][9];
 int top[]=new int[81],count;
@@ -1640,6 +1646,585 @@ void check()
     if(filled_boxes==81&&cheatbit==0)
         chkbtn.setEnabled(true);
     else chkbtn.setEnabled(false);
+}
+void lock()
+{
+    int i=0,j=0;
+        if(sudokumatrix[i][j++]!=0)
+        {
+            int a = sudokumatrix[i][j-1];
+            c1.removeAllItems();
+            c1.addItem(a);
+            c1.setFont(new Font("Thahoma",Font.BOLD,18));
+        }
+        if(sudokumatrix[i][j++]!=0)
+        {
+            int a = sudokumatrix[i][j-1];
+            c2.removeAllItems();
+            c2.addItem(a);
+            c2.setFont(new Font("Thahoma",Font.BOLD,18));
+        }
+        if(sudokumatrix[i][j++]!=0)
+        {
+            int a = sudokumatrix[i][j-1];
+            c3.removeAllItems();
+            c3.addItem(a);
+            c3.setFont(new Font("Thahoma",Font.BOLD,18));
+        }
+        if(sudokumatrix[i][j++]!=0)
+        {
+            int a = sudokumatrix[i][j-1];
+            c4.removeAllItems();
+            c4.addItem(a);
+            c4.setFont(new Font("Thahoma",Font.BOLD,18));
+        }
+        if(sudokumatrix[i][j++]!=0)
+        {
+            int a = sudokumatrix[i][j-1];
+            c5.removeAllItems();
+            c5.addItem(a);
+            c5.setFont(new Font("Thahoma",Font.BOLD,18));
+        }
+        if(sudokumatrix[i][j++]!=0)
+        {
+            int a = sudokumatrix[i][j-1];
+            c6.removeAllItems();
+            c6.addItem(a);
+            c6.setFont(new Font("Thahoma",Font.BOLD,18));
+        }
+        if(sudokumatrix[i][j++]!=0)
+        {
+            int a = sudokumatrix[i][j-1];
+            c7.removeAllItems();
+            c7.addItem(a);
+            c7.setFont(new Font("Thahoma",Font.BOLD,18));
+        }
+        if(sudokumatrix[i][j++]!=0)
+        {
+            int a = sudokumatrix[i][j-1];
+            c8.removeAllItems();
+            c8.addItem(a);
+            c8.setFont(new Font("Thahoma",Font.BOLD,18));
+        }
+        if(sudokumatrix[i][j++]!=0)
+        {
+            int a = sudokumatrix[i][j-1];
+            c9.removeAllItems();
+            c9.addItem(a);
+            c9.setFont(new Font("Thahoma",Font.BOLD,18));
+        }
+        i=1;j=0;
+        if(sudokumatrix[i][j++]!=0)
+        {
+            int a = sudokumatrix[i][j-1];
+            c10.removeAllItems();
+            c10.addItem(a);
+            c10.setFont(new Font("Thahoma",Font.BOLD,18));
+        }
+        if(sudokumatrix[i][j++]!=0)
+        {
+            int a = sudokumatrix[i][j-1];
+            c11.removeAllItems();
+            c11.addItem(a);
+            c11.setFont(new Font("Thahoma",Font.BOLD,18));
+        }
+        if(sudokumatrix[i][j++]!=0)
+        {
+            int a = sudokumatrix[i][j-1];
+            c12.removeAllItems();
+            c12.addItem(a);
+            c12.setFont(new Font("Thahoma",Font.BOLD,18));
+        }
+        if(sudokumatrix[i][j++]!=0)
+        {
+            int a = sudokumatrix[i][j-1];
+            c13.removeAllItems();
+            c13.addItem(a);
+            c13.setFont(new Font("Thahoma",Font.BOLD,18));
+        }
+        if(sudokumatrix[i][j++]!=0)
+        {
+            int a = sudokumatrix[i][j-1];
+            c14.removeAllItems();
+            c14.addItem(a);
+            c14.setFont(new Font("Thahoma",Font.BOLD,18));
+        }
+        if(sudokumatrix[i][j++]!=0)
+        {
+            int a = sudokumatrix[i][j-1];
+            c15.removeAllItems();
+            c15.addItem(a);
+            c15.setFont(new Font("Thahoma",Font.BOLD,18));
+        }
+        if(sudokumatrix[i][j++]!=0)
+        {
+            int a = sudokumatrix[i][j-1];
+            c16.removeAllItems();
+            c16.addItem(a);
+            c16.setFont(new Font("Thahoma",Font.BOLD,18));
+        }
+        if(sudokumatrix[i][j++]!=0)
+        {
+            int a = sudokumatrix[i][j-1];
+            c17.removeAllItems();
+            c17.addItem(a);
+            c17.setFont(new Font("Thahoma",Font.BOLD,18));
+        }
+        if(sudokumatrix[i][j++]!=0)
+        {
+            int a = sudokumatrix[i][j-1];
+            c18.removeAllItems();
+            c18.addItem(a);
+            c18.setFont(new Font("Thahoma",Font.BOLD,18));
+        }
+        i=2;j=0;
+        if(sudokumatrix[i][j++]!=0)
+        {
+            int a = sudokumatrix[i][j-1];
+            c19.removeAllItems();
+            c19.addItem(a);
+            c19.setFont(new Font("Thahoma",Font.BOLD,18));
+        }
+        if(sudokumatrix[i][j++]!=0)
+        {
+            int a = sudokumatrix[i][j-1];
+            c20.removeAllItems();
+            c20.addItem(a);
+            c20.setFont(new Font("Thahoma",Font.BOLD,18));
+        }
+        if(sudokumatrix[i][j++]!=0)
+        {
+            int a = sudokumatrix[i][j-1];
+            c21.removeAllItems();
+            c21.addItem(a);
+            c21.setFont(new Font("Thahoma",Font.BOLD,18));
+        }
+        if(sudokumatrix[i][j++]!=0)
+        {
+            int a = sudokumatrix[i][j-1];
+            c22.removeAllItems();
+            c22.addItem(a);
+            c22.setFont(new Font("Thahoma",Font.BOLD,18));
+        }
+        if(sudokumatrix[i][j++]!=0)
+        {
+            int a = sudokumatrix[i][j-1];
+            c23.removeAllItems();
+            c23.addItem(a);
+            c23.setFont(new Font("Thahoma",Font.BOLD,18));
+        }
+        if(sudokumatrix[i][j++]!=0)
+        {
+            int a = sudokumatrix[i][j-1];
+            c24.removeAllItems();
+            c24.addItem(a);
+            c24.setFont(new Font("Thahoma",Font.BOLD,18));
+        }
+        if(sudokumatrix[i][j++]!=0)
+        {
+            int a = sudokumatrix[i][j-1];
+            c25.removeAllItems();
+            c25.addItem(a);
+            c25.setFont(new Font("Thahoma",Font.BOLD,18));
+        }
+        if(sudokumatrix[i][j++]!=0)
+        {
+            int a = sudokumatrix[i][j-1];
+            c26.removeAllItems();
+            c26.addItem(a);
+            c26.setFont(new Font("Thahoma",Font.BOLD,18));
+        }
+        if(sudokumatrix[i][j++]!=0)
+        {
+            int a = sudokumatrix[i][j-1];
+            c27.removeAllItems();
+            c27.addItem(a);
+            c27.setFont(new Font("Thahoma",Font.BOLD,18));
+        }
+        i=3;j=0;
+        if(sudokumatrix[i][j++]!=0)
+        {
+            int a = sudokumatrix[i][j-1];
+            c28.removeAllItems();
+            c28.addItem(a);
+            c28.setFont(new Font("Thahoma",Font.BOLD,18));
+        }
+        if(sudokumatrix[i][j++]!=0)
+        {
+            int a = sudokumatrix[i][j-1];
+            c29.removeAllItems();
+            c29.addItem(a);
+            c29.setFont(new Font("Thahoma",Font.BOLD,18));
+        }
+        if(sudokumatrix[i][j++]!=0)
+        {
+            int a = sudokumatrix[i][j-1];
+            c30.removeAllItems();
+            c30.addItem(a);
+            c30.setFont(new Font("Thahoma",Font.BOLD,18));
+        }
+        if(sudokumatrix[i][j++]!=0)
+        {
+            int a = sudokumatrix[i][j-1];
+            c31.removeAllItems();
+            c31.addItem(a);
+            c31.setFont(new Font("Thahoma",Font.BOLD,18));
+        }
+        if(sudokumatrix[i][j++]!=0)
+        {
+            int a = sudokumatrix[i][j-1];
+            c32.removeAllItems();
+            c32.addItem(a);
+            c32.setFont(new Font("Thahoma",Font.BOLD,18));
+        }
+        if(sudokumatrix[i][j++]!=0)
+        {
+            int a = sudokumatrix[i][j-1];
+            c33.removeAllItems();
+            c33.addItem(a);
+            c33.setFont(new Font("Thahoma",Font.BOLD,18));
+        }
+        if(sudokumatrix[i][j++]!=0)
+        {
+            int a = sudokumatrix[i][j-1];
+            c34.removeAllItems();
+            c34.addItem(a);
+            c34.setFont(new Font("Thahoma",Font.BOLD,18));
+        }
+        if(sudokumatrix[i][j++]!=0)
+        {
+           int a = sudokumatrix[i][j-1];
+            c35.removeAllItems();
+            c35.addItem(a);
+            c35.setFont(new Font("Thahoma",Font.BOLD,18));
+        }
+        if(sudokumatrix[i][j++]!=0)
+        {
+            int a = sudokumatrix[i][j-1];
+            c36.removeAllItems();
+            c36.addItem(a);
+            c36.setFont(new Font("Thahoma",Font.BOLD,18));
+        }
+        i=4;j=0;
+        if(sudokumatrix[i][j++]!=0)
+        {
+            int a = sudokumatrix[i][j-1];
+            c37.removeAllItems();
+            c37.addItem(a);
+            c37.setFont(new Font("Thahoma",Font.BOLD,18));
+        }
+        if(sudokumatrix[i][j++]!=0)
+        {
+           int a = sudokumatrix[i][j-1];
+            c38.removeAllItems();
+            c38.addItem(a);
+            c38.setFont(new Font("Thahoma",Font.BOLD,18));
+        }
+        if(sudokumatrix[i][j++]!=0)
+        {
+            int a = sudokumatrix[i][j-1];
+            c39.removeAllItems();
+            c39.addItem(a);
+            c39.setFont(new Font("Thahoma",Font.BOLD,18));
+        }
+        if(sudokumatrix[i][j++]!=0)
+        {
+            int a = sudokumatrix[i][j-1];
+            c40.removeAllItems();
+            c40.addItem(a);
+            c40.setFont(new Font("Thahoma",Font.BOLD,18));
+        }
+        if(sudokumatrix[i][j++]!=0)
+        {
+            int a = sudokumatrix[i][j-1];
+            c41.removeAllItems();
+            c41.addItem(a);
+            c41.setFont(new Font("Thahoma",Font.BOLD,18));
+        }
+        if(sudokumatrix[i][j++]!=0)
+        {
+            int a = sudokumatrix[i][j-1];
+            c42.removeAllItems();
+            c42.addItem(a);
+            c42.setFont(new Font("Thahoma",Font.BOLD,18));
+        }
+        if(sudokumatrix[i][j++]!=0)
+        {
+            int a = sudokumatrix[i][j-1];
+            c43.removeAllItems();
+            c43.addItem(a);
+            c43.setFont(new Font("Thahoma",Font.BOLD,18));
+        }
+        if(sudokumatrix[i][j++]!=0)
+        {
+            int a = sudokumatrix[i][j-1];
+            c44.removeAllItems();
+            c44.addItem(a);
+            c44.setFont(new Font("Thahoma",Font.BOLD,18));
+        }
+        if(sudokumatrix[i][j++]!=0)
+        {
+           int a = sudokumatrix[i][j-1];
+            c45.removeAllItems();
+            c45.addItem(a);
+            c45.setFont(new Font("Thahoma",Font.BOLD,18));
+        }
+        i=5;j=0;
+        if(sudokumatrix[i][j++]!=0)
+        {
+            int a = sudokumatrix[i][j-1];
+            c46.removeAllItems();
+            c46.addItem(a);
+            c46.setFont(new Font("Thahoma",Font.BOLD,18));
+        }
+        if(sudokumatrix[i][j++]!=0)
+        {
+            int a = sudokumatrix[i][j-1];
+            c47.removeAllItems();
+            c47.addItem(a);
+            c47.setFont(new Font("Thahoma",Font.BOLD,18));
+        }
+        if(sudokumatrix[i][j++]!=0)
+        {
+            int a = sudokumatrix[i][j-1];
+            c48.removeAllItems();
+            c48.addItem(a);
+            c48.setFont(new Font("Thahoma",Font.BOLD,18));
+        }
+        if(sudokumatrix[i][j++]!=0)
+        {
+            int a = sudokumatrix[i][j-1];
+            c49.removeAllItems();
+            c49.addItem(a);
+            c49.setFont(new Font("Thahoma",Font.BOLD,18));
+        }
+        if(sudokumatrix[i][j++]!=0)
+        {
+            int a = sudokumatrix[i][j-1];
+            c50.removeAllItems();
+            c50.addItem(a);
+            c50.setFont(new Font("Thahoma",Font.BOLD,18));
+        }
+        if(sudokumatrix[i][j++]!=0)
+        {
+           int a = sudokumatrix[i][j-1];
+            c51.removeAllItems();
+            c51.addItem(a);
+            c51.setFont(new Font("Thahoma",Font.BOLD,18));
+        }
+        if(sudokumatrix[i][j++]!=0)
+        {
+            int a = sudokumatrix[i][j-1];
+            c52.removeAllItems();
+            c52.addItem(a);
+            c52.setFont(new Font("Thahoma",Font.BOLD,18));
+        }
+        if(sudokumatrix[i][j++]!=0)
+        {
+            int a = sudokumatrix[i][j-1];
+            c53.removeAllItems();
+            c53.addItem(a);
+            c53.setFont(new Font("Thahoma",Font.BOLD,18));
+        }
+        if(sudokumatrix[i][j++]!=0)
+        {
+            int a = sudokumatrix[i][j-1];
+            c54.removeAllItems();
+            c54.addItem(a);
+            c54.setFont(new Font("Thahoma",Font.BOLD,18));
+        }
+        i=6;j=0;
+        if(sudokumatrix[i][j++]!=0)
+        {
+           int a = sudokumatrix[i][j-1];
+            c55.removeAllItems();
+            c55.addItem(a);
+            c55.setFont(new Font("Thahoma",Font.BOLD,18));
+        }
+        if(sudokumatrix[i][j++]!=0)
+        {
+            int a = sudokumatrix[i][j-1];
+            c56.removeAllItems();
+            c56.addItem(a);
+            c56.setFont(new Font("Thahoma",Font.BOLD,18));
+        }
+        if(sudokumatrix[i][j++]!=0)
+        {
+            int a = sudokumatrix[i][j-1];
+            c57.removeAllItems();
+            c57.addItem(a);
+            c57.setFont(new Font("Thahoma",Font.BOLD,18));
+        }
+        if(sudokumatrix[i][j++]!=0)
+        {
+            int a = sudokumatrix[i][j-1];
+            c58.removeAllItems();
+            c58.addItem(a);
+            c58.setFont(new Font("Thahoma",Font.BOLD,18));
+        }
+        if(sudokumatrix[i][j++]!=0)
+        {
+            int a = sudokumatrix[i][j-1];
+            c59.removeAllItems();
+            c59.addItem(a);
+            c59.setFont(new Font("Thahoma",Font.BOLD,18));
+        }
+        if(sudokumatrix[i][j++]!=0)
+        {
+            int a = sudokumatrix[i][j-1];
+            c60.removeAllItems();
+            c60.addItem(a);
+            c60.setFont(new Font("Thahoma",Font.BOLD,18));
+        }
+        if(sudokumatrix[i][j++]!=0)
+        {
+           int a = sudokumatrix[i][j-1];
+            c61.removeAllItems();
+            c61.addItem(a);
+            c61.setFont(new Font("Thahoma",Font.BOLD,18));
+        }
+        if(sudokumatrix[i][j++]!=0)
+        {
+            int a = sudokumatrix[i][j-1];
+            c62.removeAllItems();
+            c62.addItem(a);
+            c62.setFont(new Font("Thahoma",Font.BOLD,18));
+        }
+        if(sudokumatrix[i][j++]!=0)
+        {
+            int a = sudokumatrix[i][j-1];
+            c63.removeAllItems();
+            c63.addItem(a);
+            c63.setFont(new Font("Thahoma",Font.BOLD,18));
+        }
+        i=7;j=0;
+        if(sudokumatrix[i][j++]!=0)
+        {
+            int a = sudokumatrix[i][j-1];
+            c64.removeAllItems();
+            c64.addItem(a);
+            c64.setFont(new Font("Thahoma",Font.BOLD,18));
+        }
+        if(sudokumatrix[i][j++]!=0)
+        {
+            int a = sudokumatrix[i][j-1];
+            c65.removeAllItems();
+            c65.addItem(a);
+            c65.setFont(new Font("Thahoma",Font.BOLD,18));
+        }
+        if(sudokumatrix[i][j++]!=0)
+        {
+            int a = sudokumatrix[i][j-1];
+            c66.removeAllItems();
+            c66.addItem(a);
+            c66.setFont(new Font("Thahoma",Font.BOLD,18));
+        }
+        if(sudokumatrix[i][j++]!=0)
+        {
+            int a = sudokumatrix[i][j-1];
+            c67.removeAllItems();
+            c67.addItem(a);
+            c67.setFont(new Font("Thahoma",Font.BOLD,18));
+        }
+        if(sudokumatrix[i][j++]!=0)
+        {
+            int a = sudokumatrix[i][j-1];
+            c68.removeAllItems();
+            c68.addItem(a);
+            c68.setFont(new Font("Thahoma",Font.BOLD,18));
+        }
+        if(sudokumatrix[i][j++]!=0)
+        {
+            int a = sudokumatrix[i][j-1];
+            c69.removeAllItems();
+            c69.addItem(a);
+            c69.setFont(new Font("Thahoma",Font.BOLD,18));
+        }
+        if(sudokumatrix[i][j++]!=0)
+        {
+            int a = sudokumatrix[i][j-1];
+            c70.removeAllItems();
+            c70.addItem(a);
+            c70.setFont(new Font("Thahoma",Font.BOLD,18));
+        }
+        if(sudokumatrix[i][j++]!=0)
+        {
+            int a = sudokumatrix[i][j-1];
+            c71.removeAllItems();
+            c71.addItem(a);
+            c71.setFont(new Font("Thahoma",Font.BOLD,18));
+        }
+        if(sudokumatrix[i][j++]!=0)
+        {
+            int a = sudokumatrix[i][j-1];
+            c72.removeAllItems();
+            c72.addItem(a);
+            c72.setFont(new Font("Thahoma",Font.BOLD,18));
+        }
+        i=8;j=0;
+        if(sudokumatrix[i][j++]!=0)
+        {
+            int a = sudokumatrix[i][j-1];
+            c73.removeAllItems();
+            c73.addItem(a);
+            c73.setFont(new Font("Thahoma",Font.BOLD,18));
+        }
+        if(sudokumatrix[i][j++]!=0)
+        {
+            int a = sudokumatrix[i][j-1];
+            c74.removeAllItems();
+            c74.addItem(a);
+            c74.setFont(new Font("Thahoma",Font.BOLD,18));
+        }
+        if(sudokumatrix[i][j++]!=0)
+        {
+            int a = sudokumatrix[i][j-1];
+            c75.removeAllItems();
+            c75.addItem(a);
+            c75.setFont(new Font("Thahoma",Font.BOLD,18));
+        }
+        if(sudokumatrix[i][j++]!=0)
+        {
+            int a = sudokumatrix[i][j-1];
+            c76.removeAllItems();
+            c76.addItem(a);
+            c76.setFont(new Font("Thahoma",Font.BOLD,18));
+        }
+        if(sudokumatrix[i][j++]!=0)
+        {
+            int a = sudokumatrix[i][j-1];
+            c77.removeAllItems();
+            c77.addItem(a);
+            c77.setFont(new Font("Thahoma",Font.BOLD,18));
+        }
+        if(sudokumatrix[i][j++]!=0)
+        {
+            int a = sudokumatrix[i][j-1];
+            c78.removeAllItems();
+            c78.addItem(a);
+            c78.setFont(new Font("Thahoma",Font.BOLD,18));
+        }
+        if(sudokumatrix[i][j++]!=0)
+        {
+            int a = sudokumatrix[i][j-1];
+            c79.removeAllItems();
+            c79.addItem(a);
+            c79.setFont(new Font("Thahoma",Font.BOLD,18));
+        }
+        if(sudokumatrix[i][j++]!=0)
+        {
+            int a = sudokumatrix[i][j-1];
+            c80.removeAllItems();
+            c80.addItem(a);
+            c80.setFont(new Font("Thahoma",Font.BOLD,18));
+        }
+        if(sudokumatrix[i][j++]!=0)
+        {
+            int a = sudokumatrix[i][j-1];
+            c81.removeAllItems();
+            c81.addItem(a);
+            c81.setFont(new Font("Thahoma",Font.BOLD,18));
+        }
 }
  void print()
 { int i=0,j=0;
