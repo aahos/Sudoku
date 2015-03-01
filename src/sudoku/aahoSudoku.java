@@ -5,6 +5,7 @@
  */
 package sudoku;
 
+import java.awt.Color;
 import java.awt.Font;
 import javax.swing.JOptionPane;
 import javax.swing.JComboBox;
@@ -26,6 +27,11 @@ public class aahoSudoku extends javax.swing.JFrame {
     private void initcustom()
     {
         chkbtn.setEnabled(false);
+        jButton1.setToolTipText("Click to Generate a random Sudoku.");
+        solbtn.setToolTipText("Click to solve the Sudoku. If the Sudoku is empty a default Solution will be generated");
+        clrbtn.setToolTipText("Click to Clear the Sudoku.");
+        lockbtn.setToolTipText("Click to lock the fields that are filled.");
+        chkbtn.setToolTipText("Fill the Sudoku yourself to Click this button.");
         
     }
 
@@ -1120,8 +1126,24 @@ public class aahoSudoku extends javax.swing.JFrame {
       int i;
       for(i=0;i<81;i++)
           top[i]=-1;
+      if(lock==1)
+      {
+      for(i=0;i<9;i++)
+        {
+            for(int j =0;j<9;j++)
+                sudokumatrix[i][j]=sudokutempcopy[i][j];
+                
+        }
+      }
         if(sudoku(0,0))
       {
+          for(i=0;i<9;i++)
+            {
+                for(int j =0;j<9;j++)
+                    if(sudokutempcopy[i][j]!=0)
+                            sudokumatrix[i][j]=0;
+
+            }
           print();
           cheatbit=1;
           if(count>1) JOptionPane.showMessageDialog(rootPane,"More than one solution exist for this sudoku");
@@ -1541,6 +1563,13 @@ public class aahoSudoku extends javax.swing.JFrame {
     private void chkbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_chkbtnActionPerformed
         int falg =0;
         int sum =0;
+        for(int i=0;i<9;i++)
+        {
+            for(int j =0;j<9;j++)
+                if(sudokutempcopy[i][j]!=0)
+                sudokumatrix[i][j]=sudokutempcopy[i][j];
+                
+        }
         for(int i=0;i<9&&falg==0;i++)
         {
             for(int j =0;j<9;j++)
@@ -1566,6 +1595,7 @@ public class aahoSudoku extends javax.swing.JFrame {
 
     private void clrbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clrbtnActionPerformed
         cheatbit=0;
+        lock =0;
         for(int i=0;i<9;i++)
         {
             for(int j =0;j<9;j++)
@@ -1661,12 +1691,27 @@ public class aahoSudoku extends javax.swing.JFrame {
     }//GEN-LAST:event_clrbtnActionPerformed
 
     private void lockbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lockbtnActionPerformed
-        
-          lock();  // TODO add your handling code here:
+        lock = 1;
+        for(int i=0;i<9;i++)
+        {
+            for(int j =0;j<9;j++)
+            sudokutempcopy[i][j] =sudokumatrix[i][j];
+                
+        }
+          lock();
+          for(int i=0;i<9;i++)
+        {
+            for(int j =0;j<9;j++)
+                System.out.print(sudokutempcopy[i][j]);
+            System.out.println();
+                
+        }
+          // TODO add your handling code here:
     }//GEN-LAST:event_lockbtnActionPerformed
 int sudokumatrix[][]= new int[9][9];
+int sudokutempcopy[][] = new int [9][9];
 int top[]=new int[81],count;
-int cheatbit=0;
+int cheatbit=0,lock=0;
 int stack[][] = new int[81][9];
 void push(int s,int val)
 {
@@ -1725,7 +1770,10 @@ void check()
             if(sudokumatrix[i][j]!=0)
                 filled_boxes++;
     if(filled_boxes==81&&cheatbit==0)
+    {
         chkbtn.setEnabled(true);
+        chkbtn.setToolTipText("Click this button to check if the Sudoku is correctly filled");
+    }
     else chkbtn.setEnabled(false);
 }
 void lock()
@@ -1737,6 +1785,7 @@ void lock()
             c1.removeAllItems();
             c1.addItem(a);
             c1.setFont(new Font("Thahoma",Font.BOLD,18));
+            c1.setForeground(Color.red);
         }
         if(sudokumatrix[i][j++]!=0)
         {
@@ -1744,6 +1793,7 @@ void lock()
             c2.removeAllItems();
             c2.addItem(a);
             c2.setFont(new Font("Thahoma",Font.BOLD,18));
+            c2.setForeground(Color.red);
         }
         if(sudokumatrix[i][j++]!=0)
         {
@@ -1751,6 +1801,7 @@ void lock()
             c3.removeAllItems();
             c3.addItem(a);
             c3.setFont(new Font("Thahoma",Font.BOLD,18));
+            c3.setForeground(Color.red);
         }
         if(sudokumatrix[i][j++]!=0)
         {
@@ -1758,6 +1809,7 @@ void lock()
             c4.removeAllItems();
             c4.addItem(a);
             c4.setFont(new Font("Thahoma",Font.BOLD,18));
+            c4.setForeground(Color.red);
         }
         if(sudokumatrix[i][j++]!=0)
         {
@@ -1765,6 +1817,7 @@ void lock()
             c5.removeAllItems();
             c5.addItem(a);
             c5.setFont(new Font("Thahoma",Font.BOLD,18));
+            c5.setForeground(Color.red);
         }
         if(sudokumatrix[i][j++]!=0)
         {
@@ -1772,6 +1825,7 @@ void lock()
             c6.removeAllItems();
             c6.addItem(a);
             c6.setFont(new Font("Thahoma",Font.BOLD,18));
+            c6.setForeground(Color.red);
         }
         if(sudokumatrix[i][j++]!=0)
         {
@@ -1779,6 +1833,7 @@ void lock()
             c7.removeAllItems();
             c7.addItem(a);
             c7.setFont(new Font("Thahoma",Font.BOLD,18));
+            c7.setForeground(Color.red);
         }
         if(sudokumatrix[i][j++]!=0)
         {
@@ -1786,6 +1841,7 @@ void lock()
             c8.removeAllItems();
             c8.addItem(a);
             c8.setFont(new Font("Thahoma",Font.BOLD,18));
+            c8.setForeground(Color.red);
         }
         if(sudokumatrix[i][j++]!=0)
         {
@@ -1793,6 +1849,7 @@ void lock()
             c9.removeAllItems();
             c9.addItem(a);
             c9.setFont(new Font("Thahoma",Font.BOLD,18));
+            c9.setForeground(Color.red);
         }
         i=1;j=0;
         if(sudokumatrix[i][j++]!=0)
@@ -1801,6 +1858,7 @@ void lock()
             c10.removeAllItems();
             c10.addItem(a);
             c10.setFont(new Font("Thahoma",Font.BOLD,18));
+            c10.setForeground(Color.red);
         }
         if(sudokumatrix[i][j++]!=0)
         {
@@ -1808,6 +1866,7 @@ void lock()
             c11.removeAllItems();
             c11.addItem(a);
             c11.setFont(new Font("Thahoma",Font.BOLD,18));
+            c11.setForeground(Color.red);
         }
         if(sudokumatrix[i][j++]!=0)
         {
@@ -1815,6 +1874,7 @@ void lock()
             c12.removeAllItems();
             c12.addItem(a);
             c12.setFont(new Font("Thahoma",Font.BOLD,18));
+            c12.setForeground(Color.red);
         }
         if(sudokumatrix[i][j++]!=0)
         {
@@ -1822,6 +1882,7 @@ void lock()
             c13.removeAllItems();
             c13.addItem(a);
             c13.setFont(new Font("Thahoma",Font.BOLD,18));
+            c13.setForeground(Color.red);
         }
         if(sudokumatrix[i][j++]!=0)
         {
@@ -1829,6 +1890,7 @@ void lock()
             c14.removeAllItems();
             c14.addItem(a);
             c14.setFont(new Font("Thahoma",Font.BOLD,18));
+            c14.setForeground(Color.red);
         }
         if(sudokumatrix[i][j++]!=0)
         {
@@ -1836,6 +1898,7 @@ void lock()
             c15.removeAllItems();
             c15.addItem(a);
             c15.setFont(new Font("Thahoma",Font.BOLD,18));
+            c15.setForeground(Color.red);
         }
         if(sudokumatrix[i][j++]!=0)
         {
@@ -1843,6 +1906,7 @@ void lock()
             c16.removeAllItems();
             c16.addItem(a);
             c16.setFont(new Font("Thahoma",Font.BOLD,18));
+            c16.setForeground(Color.red);
         }
         if(sudokumatrix[i][j++]!=0)
         {
@@ -1850,6 +1914,7 @@ void lock()
             c17.removeAllItems();
             c17.addItem(a);
             c17.setFont(new Font("Thahoma",Font.BOLD,18));
+            c17.setForeground(Color.red);
         }
         if(sudokumatrix[i][j++]!=0)
         {
@@ -1857,6 +1922,7 @@ void lock()
             c18.removeAllItems();
             c18.addItem(a);
             c18.setFont(new Font("Thahoma",Font.BOLD,18));
+            c18.setForeground(Color.red);
         }
         i=2;j=0;
         if(sudokumatrix[i][j++]!=0)
@@ -1865,6 +1931,7 @@ void lock()
             c19.removeAllItems();
             c19.addItem(a);
             c19.setFont(new Font("Thahoma",Font.BOLD,18));
+            c19.setForeground(Color.red);
         }
         if(sudokumatrix[i][j++]!=0)
         {
@@ -1872,6 +1939,7 @@ void lock()
             c20.removeAllItems();
             c20.addItem(a);
             c20.setFont(new Font("Thahoma",Font.BOLD,18));
+            c20.setForeground(Color.red);
         }
         if(sudokumatrix[i][j++]!=0)
         {
@@ -1879,6 +1947,7 @@ void lock()
             c21.removeAllItems();
             c21.addItem(a);
             c21.setFont(new Font("Thahoma",Font.BOLD,18));
+            c21.setForeground(Color.red);
         }
         if(sudokumatrix[i][j++]!=0)
         {
@@ -1886,6 +1955,7 @@ void lock()
             c22.removeAllItems();
             c22.addItem(a);
             c22.setFont(new Font("Thahoma",Font.BOLD,18));
+            c22.setForeground(Color.red);
         }
         if(sudokumatrix[i][j++]!=0)
         {
@@ -1893,6 +1963,7 @@ void lock()
             c23.removeAllItems();
             c23.addItem(a);
             c23.setFont(new Font("Thahoma",Font.BOLD,18));
+            c23.setForeground(Color.red);
         }
         if(sudokumatrix[i][j++]!=0)
         {
@@ -1900,6 +1971,7 @@ void lock()
             c24.removeAllItems();
             c24.addItem(a);
             c24.setFont(new Font("Thahoma",Font.BOLD,18));
+            c24.setForeground(Color.red);
         }
         if(sudokumatrix[i][j++]!=0)
         {
@@ -1907,6 +1979,7 @@ void lock()
             c25.removeAllItems();
             c25.addItem(a);
             c25.setFont(new Font("Thahoma",Font.BOLD,18));
+            c25.setForeground(Color.red);
         }
         if(sudokumatrix[i][j++]!=0)
         {
@@ -1914,6 +1987,7 @@ void lock()
             c26.removeAllItems();
             c26.addItem(a);
             c26.setFont(new Font("Thahoma",Font.BOLD,18));
+            c26.setForeground(Color.red);
         }
         if(sudokumatrix[i][j++]!=0)
         {
@@ -1921,6 +1995,7 @@ void lock()
             c27.removeAllItems();
             c27.addItem(a);
             c27.setFont(new Font("Thahoma",Font.BOLD,18));
+            c27.setForeground(Color.red);
         }
         i=3;j=0;
         if(sudokumatrix[i][j++]!=0)
@@ -1929,6 +2004,7 @@ void lock()
             c28.removeAllItems();
             c28.addItem(a);
             c28.setFont(new Font("Thahoma",Font.BOLD,18));
+            c28.setForeground(Color.red);
         }
         if(sudokumatrix[i][j++]!=0)
         {
@@ -1936,6 +2012,7 @@ void lock()
             c29.removeAllItems();
             c29.addItem(a);
             c29.setFont(new Font("Thahoma",Font.BOLD,18));
+            c29.setForeground(Color.red);
         }
         if(sudokumatrix[i][j++]!=0)
         {
@@ -1943,6 +2020,7 @@ void lock()
             c30.removeAllItems();
             c30.addItem(a);
             c30.setFont(new Font("Thahoma",Font.BOLD,18));
+            c30.setForeground(Color.red);
         }
         if(sudokumatrix[i][j++]!=0)
         {
@@ -1950,6 +2028,7 @@ void lock()
             c31.removeAllItems();
             c31.addItem(a);
             c31.setFont(new Font("Thahoma",Font.BOLD,18));
+            c31.setForeground(Color.red);
         }
         if(sudokumatrix[i][j++]!=0)
         {
@@ -1957,6 +2036,7 @@ void lock()
             c32.removeAllItems();
             c32.addItem(a);
             c32.setFont(new Font("Thahoma",Font.BOLD,18));
+            c32.setForeground(Color.red);
         }
         if(sudokumatrix[i][j++]!=0)
         {
@@ -1964,6 +2044,7 @@ void lock()
             c33.removeAllItems();
             c33.addItem(a);
             c33.setFont(new Font("Thahoma",Font.BOLD,18));
+            c33.setForeground(Color.red);
         }
         if(sudokumatrix[i][j++]!=0)
         {
@@ -1971,6 +2052,7 @@ void lock()
             c34.removeAllItems();
             c34.addItem(a);
             c34.setFont(new Font("Thahoma",Font.BOLD,18));
+            c34.setForeground(Color.red);
         }
         if(sudokumatrix[i][j++]!=0)
         {
@@ -1978,6 +2060,7 @@ void lock()
             c35.removeAllItems();
             c35.addItem(a);
             c35.setFont(new Font("Thahoma",Font.BOLD,18));
+            c35.setForeground(Color.red);
         }
         if(sudokumatrix[i][j++]!=0)
         {
@@ -1985,6 +2068,7 @@ void lock()
             c36.removeAllItems();
             c36.addItem(a);
             c36.setFont(new Font("Thahoma",Font.BOLD,18));
+            c36.setForeground(Color.red);
         }
         i=4;j=0;
         if(sudokumatrix[i][j++]!=0)
@@ -1993,6 +2077,7 @@ void lock()
             c37.removeAllItems();
             c37.addItem(a);
             c37.setFont(new Font("Thahoma",Font.BOLD,18));
+            c37.setForeground(Color.red);
         }
         if(sudokumatrix[i][j++]!=0)
         {
@@ -2000,6 +2085,7 @@ void lock()
             c38.removeAllItems();
             c38.addItem(a);
             c38.setFont(new Font("Thahoma",Font.BOLD,18));
+            c38.setForeground(Color.red);
         }
         if(sudokumatrix[i][j++]!=0)
         {
@@ -2007,6 +2093,7 @@ void lock()
             c39.removeAllItems();
             c39.addItem(a);
             c39.setFont(new Font("Thahoma",Font.BOLD,18));
+            c39.setForeground(Color.red);
         }
         if(sudokumatrix[i][j++]!=0)
         {
@@ -2014,6 +2101,7 @@ void lock()
             c40.removeAllItems();
             c40.addItem(a);
             c40.setFont(new Font("Thahoma",Font.BOLD,18));
+            c40.setForeground(Color.red);
         }
         if(sudokumatrix[i][j++]!=0)
         {
@@ -2021,6 +2109,7 @@ void lock()
             c41.removeAllItems();
             c41.addItem(a);
             c41.setFont(new Font("Thahoma",Font.BOLD,18));
+            c41.setForeground(Color.red);
         }
         if(sudokumatrix[i][j++]!=0)
         {
@@ -2028,6 +2117,7 @@ void lock()
             c42.removeAllItems();
             c42.addItem(a);
             c42.setFont(new Font("Thahoma",Font.BOLD,18));
+            c42.setForeground(Color.red);
         }
         if(sudokumatrix[i][j++]!=0)
         {
@@ -2035,6 +2125,7 @@ void lock()
             c43.removeAllItems();
             c43.addItem(a);
             c43.setFont(new Font("Thahoma",Font.BOLD,18));
+            c43.setForeground(Color.red);
         }
         if(sudokumatrix[i][j++]!=0)
         {
@@ -2042,6 +2133,7 @@ void lock()
             c44.removeAllItems();
             c44.addItem(a);
             c44.setFont(new Font("Thahoma",Font.BOLD,18));
+            c44.setForeground(Color.red);
         }
         if(sudokumatrix[i][j++]!=0)
         {
@@ -2049,6 +2141,7 @@ void lock()
             c45.removeAllItems();
             c45.addItem(a);
             c45.setFont(new Font("Thahoma",Font.BOLD,18));
+            c45.setForeground(Color.red);
         }
         i=5;j=0;
         if(sudokumatrix[i][j++]!=0)
@@ -2057,6 +2150,7 @@ void lock()
             c46.removeAllItems();
             c46.addItem(a);
             c46.setFont(new Font("Thahoma",Font.BOLD,18));
+            c46.setForeground(Color.red);
         }
         if(sudokumatrix[i][j++]!=0)
         {
@@ -2064,6 +2158,7 @@ void lock()
             c47.removeAllItems();
             c47.addItem(a);
             c47.setFont(new Font("Thahoma",Font.BOLD,18));
+            c47.setForeground(Color.red);
         }
         if(sudokumatrix[i][j++]!=0)
         {
@@ -2071,6 +2166,7 @@ void lock()
             c48.removeAllItems();
             c48.addItem(a);
             c48.setFont(new Font("Thahoma",Font.BOLD,18));
+            c48.setForeground(Color.red);
         }
         if(sudokumatrix[i][j++]!=0)
         {
@@ -2078,6 +2174,7 @@ void lock()
             c49.removeAllItems();
             c49.addItem(a);
             c49.setFont(new Font("Thahoma",Font.BOLD,18));
+            c49.setForeground(Color.red);
         }
         if(sudokumatrix[i][j++]!=0)
         {
@@ -2085,6 +2182,7 @@ void lock()
             c50.removeAllItems();
             c50.addItem(a);
             c50.setFont(new Font("Thahoma",Font.BOLD,18));
+            c50.setForeground(Color.red);
         }
         if(sudokumatrix[i][j++]!=0)
         {
@@ -2092,6 +2190,7 @@ void lock()
             c51.removeAllItems();
             c51.addItem(a);
             c51.setFont(new Font("Thahoma",Font.BOLD,18));
+            c51.setForeground(Color.red);
         }
         if(sudokumatrix[i][j++]!=0)
         {
@@ -2099,6 +2198,7 @@ void lock()
             c52.removeAllItems();
             c52.addItem(a);
             c52.setFont(new Font("Thahoma",Font.BOLD,18));
+            c52.setForeground(Color.red);
         }
         if(sudokumatrix[i][j++]!=0)
         {
@@ -2106,6 +2206,7 @@ void lock()
             c53.removeAllItems();
             c53.addItem(a);
             c53.setFont(new Font("Thahoma",Font.BOLD,18));
+            c53.setForeground(Color.red);
         }
         if(sudokumatrix[i][j++]!=0)
         {
@@ -2113,6 +2214,7 @@ void lock()
             c54.removeAllItems();
             c54.addItem(a);
             c54.setFont(new Font("Thahoma",Font.BOLD,18));
+            c54.setForeground(Color.red);
         }
         i=6;j=0;
         if(sudokumatrix[i][j++]!=0)
@@ -2121,6 +2223,7 @@ void lock()
             c55.removeAllItems();
             c55.addItem(a);
             c55.setFont(new Font("Thahoma",Font.BOLD,18));
+            c55.setForeground(Color.red);
         }
         if(sudokumatrix[i][j++]!=0)
         {
@@ -2128,6 +2231,7 @@ void lock()
             c56.removeAllItems();
             c56.addItem(a);
             c56.setFont(new Font("Thahoma",Font.BOLD,18));
+            c56.setForeground(Color.red);
         }
         if(sudokumatrix[i][j++]!=0)
         {
@@ -2135,6 +2239,7 @@ void lock()
             c57.removeAllItems();
             c57.addItem(a);
             c57.setFont(new Font("Thahoma",Font.BOLD,18));
+            c57.setForeground(Color.red);
         }
         if(sudokumatrix[i][j++]!=0)
         {
@@ -2142,6 +2247,7 @@ void lock()
             c58.removeAllItems();
             c58.addItem(a);
             c58.setFont(new Font("Thahoma",Font.BOLD,18));
+            c58.setForeground(Color.red);
         }
         if(sudokumatrix[i][j++]!=0)
         {
@@ -2149,6 +2255,7 @@ void lock()
             c59.removeAllItems();
             c59.addItem(a);
             c59.setFont(new Font("Thahoma",Font.BOLD,18));
+            c59.setForeground(Color.red);
         }
         if(sudokumatrix[i][j++]!=0)
         {
@@ -2156,6 +2263,7 @@ void lock()
             c60.removeAllItems();
             c60.addItem(a);
             c60.setFont(new Font("Thahoma",Font.BOLD,18));
+            c60.setForeground(Color.red);
         }
         if(sudokumatrix[i][j++]!=0)
         {
@@ -2163,6 +2271,7 @@ void lock()
             c61.removeAllItems();
             c61.addItem(a);
             c61.setFont(new Font("Thahoma",Font.BOLD,18));
+            c61.setForeground(Color.red);
         }
         if(sudokumatrix[i][j++]!=0)
         {
@@ -2170,6 +2279,7 @@ void lock()
             c62.removeAllItems();
             c62.addItem(a);
             c62.setFont(new Font("Thahoma",Font.BOLD,18));
+            c62.setForeground(Color.red);
         }
         if(sudokumatrix[i][j++]!=0)
         {
@@ -2177,6 +2287,7 @@ void lock()
             c63.removeAllItems();
             c63.addItem(a);
             c63.setFont(new Font("Thahoma",Font.BOLD,18));
+            c63.setForeground(Color.red);
         }
         i=7;j=0;
         if(sudokumatrix[i][j++]!=0)
@@ -2185,6 +2296,7 @@ void lock()
             c64.removeAllItems();
             c64.addItem(a);
             c64.setFont(new Font("Thahoma",Font.BOLD,18));
+            c64.setForeground(Color.red);
         }
         if(sudokumatrix[i][j++]!=0)
         {
@@ -2192,6 +2304,7 @@ void lock()
             c65.removeAllItems();
             c65.addItem(a);
             c65.setFont(new Font("Thahoma",Font.BOLD,18));
+            c65.setForeground(Color.red);
         }
         if(sudokumatrix[i][j++]!=0)
         {
@@ -2199,6 +2312,7 @@ void lock()
             c66.removeAllItems();
             c66.addItem(a);
             c66.setFont(new Font("Thahoma",Font.BOLD,18));
+            c66.setForeground(Color.red);
         }
         if(sudokumatrix[i][j++]!=0)
         {
@@ -2206,6 +2320,7 @@ void lock()
             c67.removeAllItems();
             c67.addItem(a);
             c67.setFont(new Font("Thahoma",Font.BOLD,18));
+            c67.setForeground(Color.red);
         }
         if(sudokumatrix[i][j++]!=0)
         {
@@ -2213,6 +2328,7 @@ void lock()
             c68.removeAllItems();
             c68.addItem(a);
             c68.setFont(new Font("Thahoma",Font.BOLD,18));
+            c68.setForeground(Color.red);
         }
         if(sudokumatrix[i][j++]!=0)
         {
@@ -2220,6 +2336,7 @@ void lock()
             c69.removeAllItems();
             c69.addItem(a);
             c69.setFont(new Font("Thahoma",Font.BOLD,18));
+            c69.setForeground(Color.red);
         }
         if(sudokumatrix[i][j++]!=0)
         {
@@ -2227,6 +2344,7 @@ void lock()
             c70.removeAllItems();
             c70.addItem(a);
             c70.setFont(new Font("Thahoma",Font.BOLD,18));
+            c70.setForeground(Color.red);
         }
         if(sudokumatrix[i][j++]!=0)
         {
@@ -2234,6 +2352,7 @@ void lock()
             c71.removeAllItems();
             c71.addItem(a);
             c71.setFont(new Font("Thahoma",Font.BOLD,18));
+            c71.setForeground(Color.red);
         }
         if(sudokumatrix[i][j++]!=0)
         {
@@ -2241,6 +2360,7 @@ void lock()
             c72.removeAllItems();
             c72.addItem(a);
             c72.setFont(new Font("Thahoma",Font.BOLD,18));
+            c72.setForeground(Color.red);
         }
         i=8;j=0;
         if(sudokumatrix[i][j++]!=0)
@@ -2249,6 +2369,7 @@ void lock()
             c73.removeAllItems();
             c73.addItem(a);
             c73.setFont(new Font("Thahoma",Font.BOLD,18));
+            c73.setForeground(Color.red);
         }
         if(sudokumatrix[i][j++]!=0)
         {
@@ -2256,6 +2377,7 @@ void lock()
             c74.removeAllItems();
             c74.addItem(a);
             c74.setFont(new Font("Thahoma",Font.BOLD,18));
+            c74.setForeground(Color.red);
         }
         if(sudokumatrix[i][j++]!=0)
         {
@@ -2263,6 +2385,7 @@ void lock()
             c75.removeAllItems();
             c75.addItem(a);
             c75.setFont(new Font("Thahoma",Font.BOLD,18));
+            c75.setForeground(Color.red);
         }
         if(sudokumatrix[i][j++]!=0)
         {
@@ -2270,6 +2393,7 @@ void lock()
             c76.removeAllItems();
             c76.addItem(a);
             c76.setFont(new Font("Thahoma",Font.BOLD,18));
+            c76.setForeground(Color.red);
         }
         if(sudokumatrix[i][j++]!=0)
         {
@@ -2277,6 +2401,7 @@ void lock()
             c77.removeAllItems();
             c77.addItem(a);
             c77.setFont(new Font("Thahoma",Font.BOLD,18));
+            c77.setForeground(Color.red);
         }
         if(sudokumatrix[i][j++]!=0)
         {
@@ -2284,6 +2409,7 @@ void lock()
             c78.removeAllItems();
             c78.addItem(a);
             c78.setFont(new Font("Thahoma",Font.BOLD,18));
+            c78.setForeground(Color.red);
         }
         if(sudokumatrix[i][j++]!=0)
         {
@@ -2291,6 +2417,7 @@ void lock()
             c79.removeAllItems();
             c79.addItem(a);
             c79.setFont(new Font("Thahoma",Font.BOLD,18));
+            c79.setForeground(Color.red);
         }
         if(sudokumatrix[i][j++]!=0)
         {
@@ -2298,6 +2425,7 @@ void lock()
             c80.removeAllItems();
             c80.addItem(a);
             c80.setFont(new Font("Thahoma",Font.BOLD,18));
+            c80.setForeground(Color.red);
         }
         if(sudokumatrix[i][j++]!=0)
         {
@@ -2305,6 +2433,7 @@ void lock()
             c81.removeAllItems();
             c81.addItem(a);
             c81.setFont(new Font("Thahoma",Font.BOLD,18));
+            c81.setForeground(Color.red);
         }
 }
  void print()
