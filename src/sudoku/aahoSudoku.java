@@ -10,6 +10,7 @@ import java.awt.Font;
 import javax.swing.JOptionPane;
 import javax.swing.JComboBox;
 import javax.swing.MutableComboBoxModel;
+import java.util.Random;
 
 /**
  *
@@ -140,6 +141,9 @@ public class aahoSudoku extends javax.swing.JFrame {
         c80 = new javax.swing.JComboBox();
         c63 = new javax.swing.JComboBox();
         c79 = new javax.swing.JComboBox();
+        jMenuBar1 = new javax.swing.JMenuBar();
+        jMenu1 = new javax.swing.JMenu();
+        jMenu2 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -147,6 +151,11 @@ public class aahoSudoku extends javax.swing.JFrame {
         jLabel1.setText("Sudoku");
 
         jButton1.setText("Create Sudoku");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         solbtn.setText("Solve Sudoku");
         solbtn.addActionListener(new java.awt.event.ActionListener() {
@@ -1274,6 +1283,14 @@ public class aahoSudoku extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        jMenu1.setText("File");
+        jMenuBar1.add(jMenu1);
+
+        jMenu2.setText("Edit");
+        jMenuBar1.add(jMenu2);
+
+        setJMenuBar(jMenuBar1);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -1351,7 +1368,7 @@ public class aahoSudoku extends javax.swing.JFrame {
                                     .addComponent(chkbtn)
                                     .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                     .addComponent(clrbtn))
-                .addContainerGap(20, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
@@ -1361,33 +1378,36 @@ public class aahoSudoku extends javax.swing.JFrame {
       count=0;
       cheatbit=0;
       int i;
-      for(i=0;i<81;i++)
-          top[i]=-1;
-      if(lock==1)
+      if(collision()==1)
       {
-      for(i=0;i<9;i++)
-        {
-            for(int j =0;j<9;j++)
-                sudokumatrix[i][j]=sudokutempcopy[i][j];
-                
-        }
-      }
-        if(sudoku(0,0))
-      {
-          for(i=0;i<9;i++)
+            for(i=0;i<81;i++)
+                top[i]=-1;
+            if(lock==1)
             {
-                for(int j =0;j<9;j++)
-                    if(sudokutempcopy[i][j]!=0)
-                            sudokumatrix[i][j]=0;
+            for(i=0;i<9;i++)
+              {
+                  for(int j =0;j<9;j++)
+                      sudokumatrix[i][j]=sudokutempcopy[i][j];
 
+              }
             }
-          print();
-          cheatbit=1;
-          if(count>1) JOptionPane.showMessageDialog(rootPane,"More than one solution exist for this sudoku");
+              if(sudoku(0,0))
+            {
+                for(i=0;i<9;i++)
+                  {
+                      for(int j =0;j<9;j++)
+                          if(sudokutempcopy[i][j]!=0)
+                                  sudokumatrix[i][j]=0;
+
+                  }
+                print();
+                cheatbit=1;
+                if(count>1) JOptionPane.showMessageDialog(rootPane,"More than one solution exist for this sudoku");
+            }
+            else JOptionPane.showMessageDialog(rootPane,"NO solution Exist for this Sudoku.");
+            for(i=0;i<81;i++)
+                top[i]=-1;
       }
-      else JOptionPane.showMessageDialog(rootPane,"NO solution Exist for this Sudoku.");
-      for(i=0;i<81;i++)
-          top[i]=-1;
 // TODO add your handling code here:
     }//GEN-LAST:event_solbtnActionPerformed
 
@@ -1798,35 +1818,37 @@ public class aahoSudoku extends javax.swing.JFrame {
     }//GEN-LAST:event_c81ActionPerformed
 
     private void chkbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_chkbtnActionPerformed
-        int falg =0;
+        int flag =0;
         int sum =0;
-        for(int i=0;i<9;i++)
+        int i,j=0;
+        for( i=0;i<9;i++)
         {
-            for(int j =0;j<9;j++)
+            for( j =0;j<9;j++)
                 if(sudokutempcopy[i][j]!=0)
                 sudokumatrix[i][j]=sudokutempcopy[i][j];
                 
         }
-        for(int i=0;i<9&&falg==0;i++)
+        for(i=0;i<9&&flag==0;i++)
         {
-            for(int j =0;j<9;j++)
+            for( j =0;j<9;j++)
                 sum = sum +sudokumatrix[i][j];
             if(sum!=45)
-                falg=1;
+                flag=1;
         }
-        if(falg==0)
+        if(flag==0)
         {
-            for(int i=0;i<9&&falg==0;i++)
+            for( i=0;i<9&&flag==0;i++)
             {
-                for(int j =0;j<9;j++)
+                for( j =0;j<9;j++)
                     sum = sum +sudokumatrix[j][i];
                 if(sum!=45)
-                    falg=1;
+                    flag=2;
             }
         }
-        if(falg==0)
+        if(flag==0)
             JOptionPane.showMessageDialog(null,"The Solution is Correct!");
-        else JOptionPane.showMessageDialog(null,"The Solution is InCorrect!");
+        else if(flag==1) JOptionPane.showMessageDialog(null,"Error in Row: "+i+1);
+        else JOptionPane.showMessageDialog(null,"Error in Column: "+j+1);
 // TODO add your handling code here:
     }//GEN-LAST:event_chkbtnActionPerformed
 
@@ -1929,26 +1951,274 @@ public class aahoSudoku extends javax.swing.JFrame {
     }//GEN-LAST:event_clrbtnActionPerformed
 
     private void lockbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lockbtnActionPerformed
-        lock = 1;
-        lockbtn.setText("Wait...");
+        if(collision()==1)
+        {
+            lock = 1;
+            lockbtn.setText("Wait...");
+            for(int i=0;i<9;i++)
+            {
+                for(int j =0;j<9;j++)
+                sudokutempcopy[i][j] =sudokumatrix[i][j];
+
+            }
+              lock();
+              for(int i=0;i<9;i++)
+            {
+                for(int j =0;j<9;j++)
+                    System.out.print(sudokutempcopy[i][j]);
+                System.out.println();
+
+            }
+              lockbtn.setText("Lock");
+              lockbtn.setEnabled(false);
+        }  // TODO add your handling code here:
+    }//GEN-LAST:event_lockbtnActionPerformed
+int board[][];
+	int[][] nextBoard(int difficulty)
+	{
+		board= new int[9][9];
+		nextCell(0,0);
+		makeHoles(difficulty);
+		return board;
+
+	}
+	
+	/**
+	 *Recursive method that attempts to place every number in a cell.
+	 *
+	 *@param x x value of the current cell
+	 *@param y y value of the current cell
+	 *@return  true if the board completed legally, false if this cell
+	 *has no legal solutions.
+	 */
+	boolean nextCell(int x, int y)
+	{
+		int nextX = x;
+		int nextY = y;
+		int[] toCheck = {1,2,3,4,5,6,7,8,9};
+		Random r = new Random();
+		int tmp = 0;
+		int current = 0;
+		int top = toCheck.length;
+
+   		for(int i=top-1;i>0;i--)
+		{
+		    current = r.nextInt(i);
+		    tmp = toCheck[current];
+		    toCheck[current] = toCheck[i];
+		    toCheck[i] = tmp;
+    	}
+		
+		for(int i=0;i<toCheck.length;i++)
+		{
+			if(legalMove(x, y, toCheck[i]))
+			{
+				board[x][y] = toCheck[i];
+				if(x == 8)
+				{
+					if(y == 8)
+						return true;//We're done!  Yay!
+					else
+					{
+						nextX = 0;
+						nextY = y + 1;
+					}
+				}
+				else
+				{
+					nextX = x + 1;
+				}
+				if(nextCell(nextX, nextY))
+					return true;
+			}
+		}
+		board[x][y] = 0;
+		return false;
+	}
+	
+	/**
+	 *Given a cell's coordinates and a possible number for that cell,
+	 *determine if that number can be inserted into said cell legally.
+	 *
+	 *@param x       x value of cell
+	 *@param y       y value of cell
+	 *@param current The value to check in said cell.
+	 *@return        True if current is legal, false otherwise.
+	 */
+	boolean legalMove(int x, int y, int current) {
+		for(int i=0;i<9;i++) {
+			if(current == board[x][i])
+				return false;
+		}
+		for(int i=0;i<9;i++) {
+			if(current == board[i][y])
+				return false;
+		}
+		int cornerX = 0;
+		int cornerY = 0;
+		if(x > 2)
+			if(x > 5)
+				cornerX = 6;
+			else
+				cornerX = 3;
+		if(y > 2)
+			if(y > 5)
+				cornerY = 6;
+			else
+				cornerY = 3;
+		for(int i=cornerX;i<10 && i<cornerX+3;i++)
+			for(int j=cornerY;j<10 && j<cornerY+3;j++)
+				if(current == board[i][j])
+					return false;
+		return true;
+	}
+	
+	/**
+	 *Given a completed board, replace a given amount of cells with 0s
+	 *(to represent blanks)
+	 *@param holesToMake How many 0s to put in the board.
+	 */
+	void makeHoles(int holesToMake)
+	{
+		/* We define difficulty as follows:
+			Easy: 32+ clues (49 or fewer holes)
+			Medium: 27-31 clues (50-54 holes)
+			Hard: 26 or fewer clues (54+ holes)
+			This is human difficulty, not algorighmically (though there is some correlation)
+		*/
+		double remainingSquares = 81;
+		double remainingHoles = (double)holesToMake;
+		
+		for(int i=0;i<9;i++)
+			for(int j=0;j<9;j++)
+			{
+				double holeChance = remainingHoles/remainingSquares;
+				if(Math.random() <= holeChance)
+				{
+					board[i][j] = 0;
+					remainingHoles--;
+				}
+				remainingSquares--;
+			}
+	}
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+
+      cheatbit=0;
+        lock =0;
         for(int i=0;i<9;i++)
         {
             for(int j =0;j<9;j++)
-            sudokutempcopy[i][j] =sudokumatrix[i][j];
+                sudokumatrix[i][j]=0;
                 
         }
-          lock();
-          for(int i=0;i<9;i++)
+        for(int i=0;i<81;i++)
+            top[i]=-1;
+        print();
+        c1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c3.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c4.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c5.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c6.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c7.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c8.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c9.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c10.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c11.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c12.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c13.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c14.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c15.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c16.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c17.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c18.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c19.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c20.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c21.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c22.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c23.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c24.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c25.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c26.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c27.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c28.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c29.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c30.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c31.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c32.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c33.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c34.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c35.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c36.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c37.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c38.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c39.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c40.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c41.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c42.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c43.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c44.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c45.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c46.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c47.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c48.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c49.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c50.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c51.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c52.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c53.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c54.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c55.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c56.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c57.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c58.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c59.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c60.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c61.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c62.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c63.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c64.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c65.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c66.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c67.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c68.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c69.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c70.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c71.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c72.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c73.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c74.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c75.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c76.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c77.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c78.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c79.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c80.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        c81.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        lockbtn.setEnabled(true);
+        sudokumatrix = nextBoard(35);
+             if(collision()==1)
         {
-            for(int j =0;j<9;j++)
-                System.out.print(sudokutempcopy[i][j]);
-            System.out.println();
-                
-        }
-          lockbtn.setText("Lock");
-          lockbtn.setEnabled(false);
-          // TODO add your handling code here:
-    }//GEN-LAST:event_lockbtnActionPerformed
+            lock = 1;
+            lockbtn.setText("Wait...");
+            for(int i=0;i<9;i++)
+            {
+                for(int j =0;j<9;j++)
+                sudokutempcopy[i][j] =sudokumatrix[i][j];
+
+            }
+              lock();
+              for(int i=0;i<9;i++)
+            {
+                for(int j =0;j<9;j++)
+                    System.out.print(sudokutempcopy[i][j]);
+                System.out.println();
+
+            }
+              lockbtn.setText("Lock");
+              lockbtn.setEnabled(false);
+        }// TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
 int sudokumatrix[][]= new int[9][9];
 int sudokutempcopy[][] = new int [9][9];
 int top[]=new int[81],count;
@@ -2002,6 +2272,66 @@ void all_possible_entries(int x,int y)
     for(i=1;i<10;i++)
         if(arr[i]==0)
         push(x*9+y,i);
+}
+int collision()
+{
+    int flag=0;
+    int i;
+    for(i = 0;i<9&&flag==0;i++)
+    {
+        int ar[]=new int[10];
+        for(int j = 0;j<9;j++)
+            ar[sudokumatrix[i][j]]++;
+        for(int j=1;j<10;j++)
+            if(ar[j]>1)
+                flag = 1;
+    }
+    if(flag==1)
+    {
+        JOptionPane.showMessageDialog(null, "The Error in the row "+i);
+        return 0;
+    }
+    for(i = 0;i<9&&flag==0;i++)
+    {
+        int ar[]=new int[10];
+        for(int j = 0;j<9;j++)
+            ar[sudokumatrix[j][i]]++;
+        for(int j=1;j<10;j++)
+            if(ar[j]>1)
+                flag = 2;
+    }
+    if(flag==2)
+    {
+        JOptionPane.showMessageDialog(null, "The Error in the column "+i);
+        return 0;
+    }
+    int bx=0,by=0;
+    int j=0;
+    while(bx<3&&by<3)
+    {
+        int ar[] = new int[10];
+    for(i=bx*3;i<(bx+1)*3;i++)
+        for(j=by*3;j<(by+1)*3;j++)
+        ar[sudokumatrix[i][j]]++;
+    
+    for(int k=1;k<10;k++)
+            if(ar[k]>1)
+                flag = 3;
+    if(flag==3)
+        break;
+    by++;
+    if(by%3==0)
+    { bx++;
+      by=0;
+    }
+    }
+    if(flag==3)
+    {
+        int ans = (bx)*3 + (by+1);
+        JOptionPane.showMessageDialog(null, "The Error in the Block "+ans);
+        return 0;
+    }
+    return 1;
 }
 void check()
 { 
@@ -2900,6 +3230,9 @@ void lock()
     private javax.swing.JButton clrbtn;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JMenu jMenu1;
+    private javax.swing.JMenu jMenu2;
+    private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
