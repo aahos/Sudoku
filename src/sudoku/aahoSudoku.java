@@ -2350,6 +2350,7 @@ void check()
 void lock()
 {
     int i=0,j=0;
+        c1.setForeground(Color.black);
         if(sudokumatrix[i][j++]!=0)
         {
             int a = sudokumatrix[i][j-1];
@@ -2358,6 +2359,7 @@ void lock()
             c1.setFont(new Font("Thahoma",Font.BOLD,18));
             c1.setForeground(Color.red);
         }
+        c2.setForeground(Color.black);
         if(sudokumatrix[i][j++]!=0)
         {
             int a = sudokumatrix[i][j-1];
@@ -2366,6 +2368,7 @@ void lock()
             c2.setFont(new Font("Thahoma",Font.BOLD,18));
             c2.setForeground(Color.red);
         }
+        c3.setForeground(Color.black);
         if(sudokumatrix[i][j++]!=0)
         {
             int a = sudokumatrix[i][j-1];
@@ -2374,6 +2377,7 @@ void lock()
             c3.setFont(new Font("Thahoma",Font.BOLD,18));
             c3.setForeground(Color.red);
         }
+        c4.setForeground(Color.black);
         if(sudokumatrix[i][j++]!=0)
         {
             int a = sudokumatrix[i][j-1];
@@ -2382,6 +2386,7 @@ void lock()
             c4.setFont(new Font("Thahoma",Font.BOLD,18));
             c4.setForeground(Color.red);
         }
+        c5.setForeground(Color.black);
         if(sudokumatrix[i][j++]!=0)
         {
             int a = sudokumatrix[i][j-1];
@@ -2390,6 +2395,7 @@ void lock()
             c5.setFont(new Font("Thahoma",Font.BOLD,18));
             c5.setForeground(Color.red);
         }
+        c6.setForeground(Color.black);
         if(sudokumatrix[i][j++]!=0)
         {
             int a = sudokumatrix[i][j-1];
@@ -2398,6 +2404,7 @@ void lock()
             c6.setFont(new Font("Thahoma",Font.BOLD,18));
             c6.setForeground(Color.red);
         }
+        c7.setForeground(Color.black);
         if(sudokumatrix[i][j++]!=0)
         {
             int a = sudokumatrix[i][j-1];
@@ -2406,6 +2413,7 @@ void lock()
             c7.setFont(new Font("Thahoma",Font.BOLD,18));
             c7.setForeground(Color.red);
         }
+        c8.setForeground(Color.black);
         if(sudokumatrix[i][j++]!=0)
         {
             int a = sudokumatrix[i][j-1];
@@ -2414,6 +2422,7 @@ void lock()
             c8.setFont(new Font("Thahoma",Font.BOLD,18));
             c8.setForeground(Color.red);
         }
+        c9.setForeground(Color.black);
         if(sudokumatrix[i][j++]!=0)
         {
             int a = sudokumatrix[i][j-1];
@@ -2423,6 +2432,7 @@ void lock()
             c9.setForeground(Color.red);
         }
         i=1;j=0;
+        c10.setForeground(Color.black);
         if(sudokumatrix[i][j++]!=0)
         {
             int a = sudokumatrix[i][j-1];
@@ -2431,6 +2441,7 @@ void lock()
             c10.setFont(new Font("Thahoma",Font.BOLD,18));
             c10.setForeground(Color.red);
         }
+        c11.setForeground(Color.black);
         if(sudokumatrix[i][j++]!=0)
         {
             int a = sudokumatrix[i][j-1];
@@ -2439,6 +2450,7 @@ void lock()
             c11.setFont(new Font("Thahoma",Font.BOLD,18));
             c11.setForeground(Color.red);
         }
+        c12.setForeground(Color.black);
         if(sudokumatrix[i][j++]!=0)
         {
             int a = sudokumatrix[i][j-1];
@@ -2447,6 +2459,7 @@ void lock()
             c12.setFont(new Font("Thahoma",Font.BOLD,18));
             c12.setForeground(Color.red);
         }
+        c13.setForeground(Color.black);
         if(sudokumatrix[i][j++]!=0)
         {
             int a = sudokumatrix[i][j-1];
@@ -2455,6 +2468,7 @@ void lock()
             c13.setFont(new Font("Thahoma",Font.BOLD,18));
             c13.setForeground(Color.red);
         }
+        c14.setForeground(Color.black);
         if(sudokumatrix[i][j++]!=0)
         {
             int a = sudokumatrix[i][j-1];
@@ -2463,6 +2477,7 @@ void lock()
             c14.setFont(new Font("Thahoma",Font.BOLD,18));
             c14.setForeground(Color.red);
         }
+        c15.setForeground(Color.black);
         if(sudokumatrix[i][j++]!=0)
         {
             int a = sudokumatrix[i][j-1];
@@ -2471,6 +2486,7 @@ void lock()
             c15.setFont(new Font("Thahoma",Font.BOLD,18));
             c15.setForeground(Color.red);
         }
+        c16.setForeground(Color.black);
         if(sudokumatrix[i][j++]!=0)
         {
             int a = sudokumatrix[i][j-1];
@@ -2479,6 +2495,7 @@ void lock()
             c16.setFont(new Font("Thahoma",Font.BOLD,18));
             c16.setForeground(Color.red);
         }
+        c17.setForeground(Color.black);
         if(sudokumatrix[i][j++]!=0)
         {
             int a = sudokumatrix[i][j-1];
@@ -2487,6 +2504,7 @@ void lock()
             c17.setFont(new Font("Thahoma",Font.BOLD,18));
             c17.setForeground(Color.red);
         }
+        c18.setForeground(Color.black);
         if(sudokumatrix[i][j++]!=0)
         {
             int a = sudokumatrix[i][j-1];
@@ -2496,6 +2514,7 @@ void lock()
             c18.setForeground(Color.red);
         }
         i=2;j=0;
+        c19.setForeground(Color.black);
         if(sudokumatrix[i][j++]!=0)
         {
             int a = sudokumatrix[i][j-1];
@@ -2504,6 +2523,7 @@ void lock()
             c19.setFont(new Font("Thahoma",Font.BOLD,18));
             c19.setForeground(Color.red);
         }
+        c20.setForeground(Color.black);
         if(sudokumatrix[i][j++]!=0)
         {
             int a = sudokumatrix[i][j-1];
@@ -2512,6 +2532,7 @@ void lock()
             c20.setFont(new Font("Thahoma",Font.BOLD,18));
             c20.setForeground(Color.red);
         }
+        c21.setForeground(Color.black);
         if(sudokumatrix[i][j++]!=0)
         {
             int a = sudokumatrix[i][j-1];
@@ -2520,6 +2541,7 @@ void lock()
             c21.setFont(new Font("Thahoma",Font.BOLD,18));
             c21.setForeground(Color.red);
         }
+        c22.setForeground(Color.black);
         if(sudokumatrix[i][j++]!=0)
         {
             int a = sudokumatrix[i][j-1];
@@ -2528,6 +2550,7 @@ void lock()
             c22.setFont(new Font("Thahoma",Font.BOLD,18));
             c22.setForeground(Color.red);
         }
+        c23.setForeground(Color.black);
         if(sudokumatrix[i][j++]!=0)
         {
             int a = sudokumatrix[i][j-1];
@@ -2536,6 +2559,7 @@ void lock()
             c23.setFont(new Font("Thahoma",Font.BOLD,18));
             c23.setForeground(Color.red);
         }
+        c24.setForeground(Color.black);
         if(sudokumatrix[i][j++]!=0)
         {
             int a = sudokumatrix[i][j-1];
@@ -2544,6 +2568,7 @@ void lock()
             c24.setFont(new Font("Thahoma",Font.BOLD,18));
             c24.setForeground(Color.red);
         }
+        c25.setForeground(Color.black);
         if(sudokumatrix[i][j++]!=0)
         {
             int a = sudokumatrix[i][j-1];
@@ -2552,6 +2577,7 @@ void lock()
             c25.setFont(new Font("Thahoma",Font.BOLD,18));
             c25.setForeground(Color.red);
         }
+        c26.setForeground(Color.black);
         if(sudokumatrix[i][j++]!=0)
         {
             int a = sudokumatrix[i][j-1];
@@ -2560,6 +2586,7 @@ void lock()
             c26.setFont(new Font("Thahoma",Font.BOLD,18));
             c26.setForeground(Color.red);
         }
+        c27.setForeground(Color.black);
         if(sudokumatrix[i][j++]!=0)
         {
             int a = sudokumatrix[i][j-1];
@@ -2569,6 +2596,7 @@ void lock()
             c27.setForeground(Color.red);
         }
         i=3;j=0;
+        c28.setForeground(Color.black);
         if(sudokumatrix[i][j++]!=0)
         {
             int a = sudokumatrix[i][j-1];
@@ -2577,6 +2605,7 @@ void lock()
             c28.setFont(new Font("Thahoma",Font.BOLD,18));
             c28.setForeground(Color.red);
         }
+        c29.setForeground(Color.black);
         if(sudokumatrix[i][j++]!=0)
         {
             int a = sudokumatrix[i][j-1];
@@ -2585,6 +2614,7 @@ void lock()
             c29.setFont(new Font("Thahoma",Font.BOLD,18));
             c29.setForeground(Color.red);
         }
+        c30.setForeground(Color.black);
         if(sudokumatrix[i][j++]!=0)
         {
             int a = sudokumatrix[i][j-1];
@@ -2593,6 +2623,7 @@ void lock()
             c30.setFont(new Font("Thahoma",Font.BOLD,18));
             c30.setForeground(Color.red);
         }
+        c31.setForeground(Color.black);
         if(sudokumatrix[i][j++]!=0)
         {
             int a = sudokumatrix[i][j-1];
@@ -2601,6 +2632,7 @@ void lock()
             c31.setFont(new Font("Thahoma",Font.BOLD,18));
             c31.setForeground(Color.red);
         }
+        c32.setForeground(Color.black);
         if(sudokumatrix[i][j++]!=0)
         {
             int a = sudokumatrix[i][j-1];
@@ -2609,6 +2641,7 @@ void lock()
             c32.setFont(new Font("Thahoma",Font.BOLD,18));
             c32.setForeground(Color.red);
         }
+        c33.setForeground(Color.black);
         if(sudokumatrix[i][j++]!=0)
         {
             int a = sudokumatrix[i][j-1];
@@ -2617,6 +2650,7 @@ void lock()
             c33.setFont(new Font("Thahoma",Font.BOLD,18));
             c33.setForeground(Color.red);
         }
+        c34.setForeground(Color.black);
         if(sudokumatrix[i][j++]!=0)
         {
             int a = sudokumatrix[i][j-1];
@@ -2625,6 +2659,7 @@ void lock()
             c34.setFont(new Font("Thahoma",Font.BOLD,18));
             c34.setForeground(Color.red);
         }
+        c35.setForeground(Color.black);
         if(sudokumatrix[i][j++]!=0)
         {
            int a = sudokumatrix[i][j-1];
@@ -2633,6 +2668,7 @@ void lock()
             c35.setFont(new Font("Thahoma",Font.BOLD,18));
             c35.setForeground(Color.red);
         }
+        c36.setForeground(Color.black);
         if(sudokumatrix[i][j++]!=0)
         {
             int a = sudokumatrix[i][j-1];
@@ -2642,6 +2678,7 @@ void lock()
             c36.setForeground(Color.red);
         }
         i=4;j=0;
+        c37.setForeground(Color.black);
         if(sudokumatrix[i][j++]!=0)
         {
             int a = sudokumatrix[i][j-1];
@@ -2650,6 +2687,7 @@ void lock()
             c37.setFont(new Font("Thahoma",Font.BOLD,18));
             c37.setForeground(Color.red);
         }
+        c38.setForeground(Color.black);
         if(sudokumatrix[i][j++]!=0)
         {
            int a = sudokumatrix[i][j-1];
@@ -2658,6 +2696,7 @@ void lock()
             c38.setFont(new Font("Thahoma",Font.BOLD,18));
             c38.setForeground(Color.red);
         }
+        c39.setForeground(Color.black);
         if(sudokumatrix[i][j++]!=0)
         {
             int a = sudokumatrix[i][j-1];
@@ -2666,6 +2705,7 @@ void lock()
             c39.setFont(new Font("Thahoma",Font.BOLD,18));
             c39.setForeground(Color.red);
         }
+        c40.setForeground(Color.black);
         if(sudokumatrix[i][j++]!=0)
         {
             int a = sudokumatrix[i][j-1];
@@ -2674,6 +2714,7 @@ void lock()
             c40.setFont(new Font("Thahoma",Font.BOLD,18));
             c40.setForeground(Color.red);
         }
+        c41.setForeground(Color.black);
         if(sudokumatrix[i][j++]!=0)
         {
             int a = sudokumatrix[i][j-1];
@@ -2682,6 +2723,7 @@ void lock()
             c41.setFont(new Font("Thahoma",Font.BOLD,18));
             c41.setForeground(Color.red);
         }
+        c42.setForeground(Color.black);
         if(sudokumatrix[i][j++]!=0)
         {
             int a = sudokumatrix[i][j-1];
@@ -2690,6 +2732,7 @@ void lock()
             c42.setFont(new Font("Thahoma",Font.BOLD,18));
             c42.setForeground(Color.red);
         }
+        c43.setForeground(Color.black);
         if(sudokumatrix[i][j++]!=0)
         {
             int a = sudokumatrix[i][j-1];
@@ -2698,6 +2741,7 @@ void lock()
             c43.setFont(new Font("Thahoma",Font.BOLD,18));
             c43.setForeground(Color.red);
         }
+        c44.setForeground(Color.black);
         if(sudokumatrix[i][j++]!=0)
         {
             int a = sudokumatrix[i][j-1];
@@ -2706,6 +2750,7 @@ void lock()
             c44.setFont(new Font("Thahoma",Font.BOLD,18));
             c44.setForeground(Color.red);
         }
+        c45.setForeground(Color.black);
         if(sudokumatrix[i][j++]!=0)
         {
            int a = sudokumatrix[i][j-1];
@@ -2715,6 +2760,7 @@ void lock()
             c45.setForeground(Color.red);
         }
         i=5;j=0;
+        c46.setForeground(Color.black);
         if(sudokumatrix[i][j++]!=0)
         {
             int a = sudokumatrix[i][j-1];
@@ -2723,6 +2769,7 @@ void lock()
             c46.setFont(new Font("Thahoma",Font.BOLD,18));
             c46.setForeground(Color.red);
         }
+        c47.setForeground(Color.black);
         if(sudokumatrix[i][j++]!=0)
         {
             int a = sudokumatrix[i][j-1];
@@ -2731,6 +2778,7 @@ void lock()
             c47.setFont(new Font("Thahoma",Font.BOLD,18));
             c47.setForeground(Color.red);
         }
+        c48.setForeground(Color.black);
         if(sudokumatrix[i][j++]!=0)
         {
             int a = sudokumatrix[i][j-1];
@@ -2739,6 +2787,7 @@ void lock()
             c48.setFont(new Font("Thahoma",Font.BOLD,18));
             c48.setForeground(Color.red);
         }
+        c49.setForeground(Color.black);
         if(sudokumatrix[i][j++]!=0)
         {
             int a = sudokumatrix[i][j-1];
@@ -2747,6 +2796,7 @@ void lock()
             c49.setFont(new Font("Thahoma",Font.BOLD,18));
             c49.setForeground(Color.red);
         }
+        c50.setForeground(Color.black);
         if(sudokumatrix[i][j++]!=0)
         {
             int a = sudokumatrix[i][j-1];
@@ -2755,6 +2805,7 @@ void lock()
             c50.setFont(new Font("Thahoma",Font.BOLD,18));
             c50.setForeground(Color.red);
         }
+        c51.setForeground(Color.black);
         if(sudokumatrix[i][j++]!=0)
         {
            int a = sudokumatrix[i][j-1];
@@ -2763,6 +2814,7 @@ void lock()
             c51.setFont(new Font("Thahoma",Font.BOLD,18));
             c51.setForeground(Color.red);
         }
+        c52.setForeground(Color.black);
         if(sudokumatrix[i][j++]!=0)
         {
             int a = sudokumatrix[i][j-1];
@@ -2771,6 +2823,7 @@ void lock()
             c52.setFont(new Font("Thahoma",Font.BOLD,18));
             c52.setForeground(Color.red);
         }
+        c53.setForeground(Color.black);
         if(sudokumatrix[i][j++]!=0)
         {
             int a = sudokumatrix[i][j-1];
@@ -2779,6 +2832,7 @@ void lock()
             c53.setFont(new Font("Thahoma",Font.BOLD,18));
             c53.setForeground(Color.red);
         }
+        c54.setForeground(Color.black);
         if(sudokumatrix[i][j++]!=0)
         {
             int a = sudokumatrix[i][j-1];
@@ -2788,6 +2842,7 @@ void lock()
             c54.setForeground(Color.red);
         }
         i=6;j=0;
+        c55.setForeground(Color.black);
         if(sudokumatrix[i][j++]!=0)
         {
            int a = sudokumatrix[i][j-1];
@@ -2796,6 +2851,7 @@ void lock()
             c55.setFont(new Font("Thahoma",Font.BOLD,18));
             c55.setForeground(Color.red);
         }
+        c56.setForeground(Color.black);
         if(sudokumatrix[i][j++]!=0)
         {
             int a = sudokumatrix[i][j-1];
@@ -2804,6 +2860,7 @@ void lock()
             c56.setFont(new Font("Thahoma",Font.BOLD,18));
             c56.setForeground(Color.red);
         }
+        c57.setForeground(Color.black);
         if(sudokumatrix[i][j++]!=0)
         {
             int a = sudokumatrix[i][j-1];
@@ -2812,6 +2869,7 @@ void lock()
             c57.setFont(new Font("Thahoma",Font.BOLD,18));
             c57.setForeground(Color.red);
         }
+        c58.setForeground(Color.black);
         if(sudokumatrix[i][j++]!=0)
         {
             int a = sudokumatrix[i][j-1];
@@ -2820,6 +2878,7 @@ void lock()
             c58.setFont(new Font("Thahoma",Font.BOLD,18));
             c58.setForeground(Color.red);
         }
+        c59.setForeground(Color.black);
         if(sudokumatrix[i][j++]!=0)
         {
             int a = sudokumatrix[i][j-1];
@@ -2828,6 +2887,7 @@ void lock()
             c59.setFont(new Font("Thahoma",Font.BOLD,18));
             c59.setForeground(Color.red);
         }
+        c60.setForeground(Color.black);
         if(sudokumatrix[i][j++]!=0)
         {
             int a = sudokumatrix[i][j-1];
@@ -2836,6 +2896,7 @@ void lock()
             c60.setFont(new Font("Thahoma",Font.BOLD,18));
             c60.setForeground(Color.red);
         }
+        c61.setForeground(Color.black);
         if(sudokumatrix[i][j++]!=0)
         {
            int a = sudokumatrix[i][j-1];
@@ -2844,6 +2905,7 @@ void lock()
             c61.setFont(new Font("Thahoma",Font.BOLD,18));
             c61.setForeground(Color.red);
         }
+        c62.setForeground(Color.black);
         if(sudokumatrix[i][j++]!=0)
         {
             int a = sudokumatrix[i][j-1];
@@ -2852,6 +2914,7 @@ void lock()
             c62.setFont(new Font("Thahoma",Font.BOLD,18));
             c62.setForeground(Color.red);
         }
+        c63.setForeground(Color.black);
         if(sudokumatrix[i][j++]!=0)
         {
             int a = sudokumatrix[i][j-1];
@@ -2861,6 +2924,7 @@ void lock()
             c63.setForeground(Color.red);
         }
         i=7;j=0;
+        c64.setForeground(Color.black);
         if(sudokumatrix[i][j++]!=0)
         {
             int a = sudokumatrix[i][j-1];
@@ -2869,6 +2933,7 @@ void lock()
             c64.setFont(new Font("Thahoma",Font.BOLD,18));
             c64.setForeground(Color.red);
         }
+        c65.setForeground(Color.black);
         if(sudokumatrix[i][j++]!=0)
         {
             int a = sudokumatrix[i][j-1];
@@ -2877,6 +2942,7 @@ void lock()
             c65.setFont(new Font("Thahoma",Font.BOLD,18));
             c65.setForeground(Color.red);
         }
+        c66.setForeground(Color.black);
         if(sudokumatrix[i][j++]!=0)
         {
             int a = sudokumatrix[i][j-1];
@@ -2885,6 +2951,7 @@ void lock()
             c66.setFont(new Font("Thahoma",Font.BOLD,18));
             c66.setForeground(Color.red);
         }
+        c67.setForeground(Color.black);
         if(sudokumatrix[i][j++]!=0)
         {
             int a = sudokumatrix[i][j-1];
@@ -2893,6 +2960,7 @@ void lock()
             c67.setFont(new Font("Thahoma",Font.BOLD,18));
             c67.setForeground(Color.red);
         }
+        c68.setForeground(Color.black);
         if(sudokumatrix[i][j++]!=0)
         {
             int a = sudokumatrix[i][j-1];
@@ -2901,6 +2969,7 @@ void lock()
             c68.setFont(new Font("Thahoma",Font.BOLD,18));
             c68.setForeground(Color.red);
         }
+        c69.setForeground(Color.black);
         if(sudokumatrix[i][j++]!=0)
         {
             int a = sudokumatrix[i][j-1];
@@ -2909,6 +2978,7 @@ void lock()
             c69.setFont(new Font("Thahoma",Font.BOLD,18));
             c69.setForeground(Color.red);
         }
+        c70.setForeground(Color.black);
         if(sudokumatrix[i][j++]!=0)
         {
             int a = sudokumatrix[i][j-1];
@@ -2917,6 +2987,7 @@ void lock()
             c70.setFont(new Font("Thahoma",Font.BOLD,18));
             c70.setForeground(Color.red);
         }
+        c71.setForeground(Color.black);
         if(sudokumatrix[i][j++]!=0)
         {
             int a = sudokumatrix[i][j-1];
@@ -2925,6 +2996,7 @@ void lock()
             c71.setFont(new Font("Thahoma",Font.BOLD,18));
             c71.setForeground(Color.red);
         }
+        c72.setForeground(Color.black);
         if(sudokumatrix[i][j++]!=0)
         {
             int a = sudokumatrix[i][j-1];
@@ -2934,6 +3006,7 @@ void lock()
             c72.setForeground(Color.red);
         }
         i=8;j=0;
+        c73.setForeground(Color.black);
         if(sudokumatrix[i][j++]!=0)
         {
             int a = sudokumatrix[i][j-1];
@@ -2942,6 +3015,7 @@ void lock()
             c73.setFont(new Font("Thahoma",Font.BOLD,18));
             c73.setForeground(Color.red);
         }
+        c74.setForeground(Color.black);
         if(sudokumatrix[i][j++]!=0)
         {
             int a = sudokumatrix[i][j-1];
@@ -2950,6 +3024,7 @@ void lock()
             c74.setFont(new Font("Thahoma",Font.BOLD,18));
             c74.setForeground(Color.red);
         }
+        c75.setForeground(Color.black);
         if(sudokumatrix[i][j++]!=0)
         {
             int a = sudokumatrix[i][j-1];
@@ -2958,6 +3033,7 @@ void lock()
             c75.setFont(new Font("Thahoma",Font.BOLD,18));
             c75.setForeground(Color.red);
         }
+        c76.setForeground(Color.black);
         if(sudokumatrix[i][j++]!=0)
         {
             int a = sudokumatrix[i][j-1];
@@ -2966,6 +3042,7 @@ void lock()
             c76.setFont(new Font("Thahoma",Font.BOLD,18));
             c76.setForeground(Color.red);
         }
+        c77.setForeground(Color.black);
         if(sudokumatrix[i][j++]!=0)
         {
             int a = sudokumatrix[i][j-1];
@@ -2974,6 +3051,7 @@ void lock()
             c77.setFont(new Font("Thahoma",Font.BOLD,18));
             c77.setForeground(Color.red);
         }
+        c78.setForeground(Color.black);
         if(sudokumatrix[i][j++]!=0)
         {
             int a = sudokumatrix[i][j-1];
@@ -2982,6 +3060,7 @@ void lock()
             c78.setFont(new Font("Thahoma",Font.BOLD,18));
             c78.setForeground(Color.red);
         }
+        c79.setForeground(Color.black);
         if(sudokumatrix[i][j++]!=0)
         {
             int a = sudokumatrix[i][j-1];
@@ -2990,6 +3069,7 @@ void lock()
             c79.setFont(new Font("Thahoma",Font.BOLD,18));
             c79.setForeground(Color.red);
         }
+        c80.setForeground(Color.black);
         if(sudokumatrix[i][j++]!=0)
         {
             int a = sudokumatrix[i][j-1];
@@ -2998,6 +3078,7 @@ void lock()
             c80.setFont(new Font("Thahoma",Font.BOLD,18));
             c80.setForeground(Color.red);
         }
+        c81.setForeground(Color.black);
         if(sudokumatrix[i][j++]!=0)
         {
             int a = sudokumatrix[i][j-1];
